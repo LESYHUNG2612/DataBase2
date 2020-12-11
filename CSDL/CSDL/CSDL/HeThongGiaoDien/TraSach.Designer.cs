@@ -30,6 +30,7 @@ namespace CSDL
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             this.NmUDThanhToan = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpNgayMuon = new System.Windows.Forms.DateTimePicker();
@@ -49,7 +50,6 @@ namespace CSDL
             this.btnTraSach = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnThanhToan = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NmUDThanhToan)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -78,6 +78,15 @@ namespace CSDL
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Mượn";
             // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Location = new System.Drawing.Point(168, 209);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(90, 29);
+            this.btnThanhToan.TabIndex = 46;
+            this.btnThanhToan.Text = "Thanh Toán";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            // 
             // NmUDThanhToan
             // 
             this.NmUDThanhToan.Hexadecimal = true;
@@ -97,7 +106,6 @@ namespace CSDL
             this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 44;
             this.label7.Text = "Cần Phải Thanh Toán";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // dtpNgayMuon
             // 
@@ -206,7 +214,6 @@ namespace CSDL
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Sách Muốn Trả";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // dgvSachMuonTra
             // 
@@ -255,15 +262,6 @@ namespace CSDL
             this.btnThem.TabIndex = 8;
             this.btnThem.Text = ">>";
             this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.Location = new System.Drawing.Point(168, 209);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(90, 29);
-            this.btnThanhToan.TabIndex = 46;
-            this.btnThanhToan.Text = "Thanh Toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
             // 
             // TraSach
             // 

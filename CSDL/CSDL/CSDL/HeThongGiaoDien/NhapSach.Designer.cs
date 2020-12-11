@@ -34,6 +34,10 @@ namespace CSDL
             this.btnclear = new System.Windows.Forms.Button();
             this.btnbosungchitiet = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtManv = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtsoluong = new System.Windows.Forms.TextBox();
             this.btnmasach = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,10 +46,10 @@ namespace CSDL
             this.txtmaphieunhap = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.latieude1 = new System.Windows.Forms.Label();
             this.dgvNhapSach = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.latieude1 = new System.Windows.Forms.Label();
+            this.dtpNgayNhap = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -90,6 +94,10 @@ namespace CSDL
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.dtpNgayNhap);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.txtManv);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtsoluong);
@@ -106,9 +114,42 @@ namespace CSDL
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sách nhập";
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Location = new System.Drawing.Point(34, 189);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(40, 13);
+            this.label28.TabIndex = 17;
+            this.label28.Text = "Mã NV";
+            // 
+            // txtManv
+            // 
+            this.txtManv.Location = new System.Drawing.Point(125, 189);
+            this.txtManv.Name = "txtManv";
+            this.txtManv.Size = new System.Drawing.Size(122, 20);
+            this.txtManv.TabIndex = 18;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(125, 146);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(162, 20);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Giá Sách";
+            // 
             // txtsoluong
             // 
-            this.txtsoluong.Location = new System.Drawing.Point(125, 146);
+            this.txtsoluong.Location = new System.Drawing.Point(125, 104);
             this.txtsoluong.Name = "txtsoluong";
             this.txtsoluong.Size = new System.Drawing.Size(162, 20);
             this.txtsoluong.TabIndex = 2;
@@ -128,7 +169,7 @@ namespace CSDL
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 149);
+            this.label5.Location = new System.Drawing.Point(34, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 0;
@@ -136,7 +177,7 @@ namespace CSDL
             // 
             // txtmasach
             // 
-            this.txtmasach.Location = new System.Drawing.Point(125, 91);
+            this.txtmasach.Location = new System.Drawing.Point(125, 69);
             this.txtmasach.Name = "txtmasach";
             this.txtmasach.ReadOnly = true;
             this.txtmasach.Size = new System.Drawing.Size(162, 20);
@@ -145,7 +186,7 @@ namespace CSDL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 94);
+            this.label3.Location = new System.Drawing.Point(34, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 0;
@@ -178,6 +219,14 @@ namespace CSDL
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Phiếu nhập chi tiết";
             // 
+            // dgvNhapSach
+            // 
+            this.dgvNhapSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhapSach.Location = new System.Drawing.Point(6, 19);
+            this.dgvNhapSach.Name = "dgvNhapSach";
+            this.dgvNhapSach.Size = new System.Drawing.Size(423, 370);
+            this.dgvNhapSach.TabIndex = 1;
+            // 
             // latieude1
             // 
             this.latieude1.AutoSize = true;
@@ -189,29 +238,22 @@ namespace CSDL
             this.latieude1.TabIndex = 13;
             this.latieude1.Text = "PHIẾU NHẬP SÁCH";
             // 
-            // dgvNhapSach
+            // dtpNgayNhap
             // 
-            this.dgvNhapSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhapSach.Location = new System.Drawing.Point(6, 19);
-            this.dgvNhapSach.Name = "dgvNhapSach";
-            this.dgvNhapSach.Size = new System.Drawing.Size(423, 370);
-            this.dgvNhapSach.TabIndex = 1;
+            this.dtpNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayNhap.Location = new System.Drawing.Point(125, 228);
+            this.dtpNgayNhap.Name = "dtpNgayNhap";
+            this.dtpNgayNhap.Size = new System.Drawing.Size(155, 20);
+            this.dtpNgayNhap.TabIndex = 36;
             // 
-            // textBox1
+            // label2
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 204);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 207);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Giá Sách";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(34, 234);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Ngày Nhập";
             // 
             // NhapSach
             // 
@@ -253,5 +295,9 @@ namespace CSDL
         private System.Windows.Forms.DataGridView dgvNhapSach;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtManv;
+        private System.Windows.Forms.DateTimePicker dtpNgayNhap;
+        private System.Windows.Forms.Label label2;
     }
 }
