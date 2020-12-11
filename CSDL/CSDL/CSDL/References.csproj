@@ -160,9 +160,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="HeThongLuuTru\" />
-    <Folder Include="HeThongXuLy\" />
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{2f415342-2959-494c-8e30-38d31adc24e3}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{b48a4982-e0df-4c79-8a62-e6edf1827477}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

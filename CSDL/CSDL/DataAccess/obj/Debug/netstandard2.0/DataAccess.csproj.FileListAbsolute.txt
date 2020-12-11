@@ -1,0 +1,9 @@
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CSDL
+namespace CSDL.HeThongGiaoDien
 {
     public partial class NhapSach : Form
     {
         public NhapSach()
         {
             InitializeComponent();
-        }
-
-        private void NhapSach_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

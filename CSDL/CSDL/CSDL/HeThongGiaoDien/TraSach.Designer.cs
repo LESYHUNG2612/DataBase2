@@ -92,6 +92,7 @@ namespace CSDL
             this.NmUDThanhToan.Hexadecimal = true;
             this.NmUDThanhToan.Location = new System.Drawing.Point(143, 164);
             this.NmUDThanhToan.Name = "NmUDThanhToan";
+            this.NmUDThanhToan.ReadOnly = true;
             this.NmUDThanhToan.Size = new System.Drawing.Size(115, 20);
             this.NmUDThanhToan.TabIndex = 45;
             this.NmUDThanhToan.ThousandsSeparator = true;
