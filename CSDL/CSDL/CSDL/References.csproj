@@ -64,6 +64,12 @@
     <Compile Include="HeThongGiaoDien\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThongGiaoDien\NhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThongGiaoDien\NhapSach.Designer.cs">
+      <DependentUpon>NhapSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThongGiaoDien\PhieuThuTien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +93,6 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HeThongGiaoDien\NhapSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThongGiaoDien\NhapSach.Designer.cs">
-      <DependentUpon>NhapSach.cs</DependentUpon>
     </Compile>
     <Compile Include="HeThongGiaoDien\MuonSach.cs">
       <SubType>Form</SubType>

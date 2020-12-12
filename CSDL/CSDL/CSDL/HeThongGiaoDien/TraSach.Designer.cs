@@ -34,7 +34,7 @@ namespace CSDL
             this.NmUDThanhToan = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.dtpNgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.cbbMaPM = new System.Windows.Forms.ComboBox();
+            this.cbbMaPT = new System.Windows.Forms.ComboBox();
             this.cbbMaDG = new System.Windows.Forms.ComboBox();
             this.btnXem = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@ namespace CSDL
             this.groupBox1.Controls.Add(this.NmUDThanhToan);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.dtpNgayMuon);
-            this.groupBox1.Controls.Add(this.cbbMaPM);
+            this.groupBox1.Controls.Add(this.cbbMaPT);
             this.groupBox1.Controls.Add(this.cbbMaDG);
             this.groupBox1.Controls.Add(this.btnXem);
             this.groupBox1.Controls.Add(this.label3);
@@ -116,13 +116,13 @@ namespace CSDL
             this.dtpNgayMuon.Size = new System.Drawing.Size(155, 20);
             this.dtpNgayMuon.TabIndex = 34;
             // 
-            // cbbMaPM
+            // cbbMaPT
             // 
-            this.cbbMaPM.FormattingEnabled = true;
-            this.cbbMaPM.Location = new System.Drawing.Point(101, 75);
-            this.cbbMaPM.Name = "cbbMaPM";
-            this.cbbMaPM.Size = new System.Drawing.Size(155, 21);
-            this.cbbMaPM.TabIndex = 12;
+            this.cbbMaPT.FormattingEnabled = true;
+            this.cbbMaPT.Location = new System.Drawing.Point(101, 75);
+            this.cbbMaPT.Name = "cbbMaPT";
+            this.cbbMaPT.Size = new System.Drawing.Size(155, 21);
+            this.cbbMaPT.TabIndex = 12;
             // 
             // cbbMaDG
             // 
@@ -155,9 +155,9 @@ namespace CSDL
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(25, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Mã PM:";
+            this.label2.Text = "Mã PT:";
             // 
             // label1
             // 
@@ -298,7 +298,7 @@ namespace CSDL
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbbMaPM;
+        private System.Windows.Forms.ComboBox cbbMaPT;
         private System.Windows.Forms.ComboBox cbbMaDG;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Label label3;

@@ -16,5 +16,10 @@ namespace CSDL.HeThongGiaoDien
         {
             InitializeComponent();
         }
+
+        private void NhapSach_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

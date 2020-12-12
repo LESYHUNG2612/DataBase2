@@ -36,15 +36,11 @@ namespace CSDL.HeThongGiaoDien
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.cboMaTheLoai = new System.Windows.Forms.ComboBox();
-            this.txtLanMuon = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.txtMaSach = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtSachTon = new System.Windows.Forms.TextBox();
-            this.dtpNgayMua = new System.Windows.Forms.DateTimePicker();
             this.txtTenSach = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLuuSach = new System.Windows.Forms.Button();
@@ -67,15 +63,11 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox1.Controls.Add(this.txtTacGia);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.cboMaTheLoai);
-            this.groupBox1.Controls.Add(this.txtLanMuon);
             this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.txtMaSach);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.txtSachTon);
-            this.groupBox1.Controls.Add(this.dtpNgayMua);
             this.groupBox1.Controls.Add(this.txtTenSach);
-            this.groupBox1.Controls.Add(this.label24);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Location = new System.Drawing.Point(12, 3);
             this.groupBox1.Name = "groupBox1";
@@ -105,7 +97,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(22, 126);
+            this.label1.Location = new System.Drawing.Point(370, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 20;
@@ -113,7 +105,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             // txtTacGia
             // 
-            this.txtTacGia.Location = new System.Drawing.Point(103, 123);
+            this.txtTacGia.Location = new System.Drawing.Point(464, 54);
             this.txtTacGia.Name = "txtTacGia";
             this.txtTacGia.Size = new System.Drawing.Size(178, 20);
             this.txtTacGia.TabIndex = 21;
@@ -139,14 +131,6 @@ namespace CSDL.HeThongGiaoDien
             this.cboMaTheLoai.Size = new System.Drawing.Size(178, 21);
             this.cboMaTheLoai.TabIndex = 19;
             // 
-            // txtLanMuon
-            // 
-            this.txtLanMuon.Location = new System.Drawing.Point(464, 117);
-            this.txtLanMuon.Multiline = true;
-            this.txtLanMuon.Name = "txtLanMuon";
-            this.txtLanMuon.Size = new System.Drawing.Size(204, 23);
-            this.txtLanMuon.TabIndex = 13;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -156,16 +140,6 @@ namespace CSDL.HeThongGiaoDien
             this.label27.Size = new System.Drawing.Size(54, 13);
             this.label27.TabIndex = 10;
             this.label27.Text = "Tên Sách";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Location = new System.Drawing.Point(373, 120);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 13);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "Số Lần Mượn";
             // 
             // txtMaSach
             // 
@@ -191,30 +165,12 @@ namespace CSDL.HeThongGiaoDien
             this.txtSachTon.Size = new System.Drawing.Size(180, 20);
             this.txtSachTon.TabIndex = 12;
             // 
-            // dtpNgayMua
-            // 
-            this.dtpNgayMua.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayMua.Location = new System.Drawing.Point(464, 53);
-            this.dtpNgayMua.Name = "dtpNgayMua";
-            this.dtpNgayMua.Size = new System.Drawing.Size(180, 20);
-            this.dtpNgayMua.TabIndex = 18;
-            // 
             // txtTenSach
             // 
             this.txtTenSach.Location = new System.Drawing.Point(103, 88);
             this.txtTenSach.Name = "txtTenSach";
             this.txtTenSach.Size = new System.Drawing.Size(178, 20);
             this.txtTenSach.TabIndex = 15;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Location = new System.Drawing.Point(373, 53);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(56, 13);
-            this.label24.TabIndex = 7;
-            this.label24.Text = "Ngày Mua";
             // 
             // label23
             // 
@@ -327,15 +283,11 @@ namespace CSDL.HeThongGiaoDien
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox txtLanMuon;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtMaSach;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtSachTon;
-        private System.Windows.Forms.DateTimePicker dtpNgayMua;
         private System.Windows.Forms.TextBox txtTenSach;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTacGia;
