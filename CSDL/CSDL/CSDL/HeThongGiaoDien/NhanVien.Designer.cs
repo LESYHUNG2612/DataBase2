@@ -30,7 +30,7 @@ namespace CSDL.HeThongGiaoDien
         private void InitializeComponent()
         {
             this.cboGioitinhnv = new System.Windows.Forms.ComboBox();
-            this.dtpNgaysinhnv = new System.Windows.Forms.DateTimePicker();
+            this.dtNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txtDienthoainv = new System.Windows.Forms.TextBox();
             this.txtDiachinv = new System.Windows.Forms.TextBox();
             this.txtTennv = new System.Windows.Forms.TextBox();
@@ -42,6 +42,7 @@ namespace CSDL.HeThongGiaoDien
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblthongbaonv = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLuuNV = new System.Windows.Forms.Button();
@@ -67,13 +68,13 @@ namespace CSDL.HeThongGiaoDien
             this.cboGioitinhnv.Size = new System.Drawing.Size(150, 21);
             this.cboGioitinhnv.TabIndex = 19;
             // 
-            // dtpNgaysinhnv
+            // dtNgaySinh
             // 
-            this.dtpNgaysinhnv.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgaysinhnv.Location = new System.Drawing.Point(465, 21);
-            this.dtpNgaysinhnv.Name = "dtpNgaysinhnv";
-            this.dtpNgaysinhnv.Size = new System.Drawing.Size(180, 20);
-            this.dtpNgaysinhnv.TabIndex = 18;
+            this.dtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtNgaySinh.Location = new System.Drawing.Point(465, 21);
+            this.dtNgaySinh.Name = "dtNgaySinh";
+            this.dtNgaySinh.Size = new System.Drawing.Size(180, 20);
+            this.dtNgaySinh.TabIndex = 18;
             // 
             // txtDienthoainv
             // 
@@ -166,6 +167,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblthongbaonv);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.cboGioitinhnv);
             this.groupBox1.Controls.Add(this.txtDiachinv);
@@ -174,7 +176,7 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox1.Controls.Add(this.txtManv);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.txtDienthoainv);
-            this.groupBox1.Controls.Add(this.dtpNgaysinhnv);
+            this.groupBox1.Controls.Add(this.dtNgaySinh);
             this.groupBox1.Controls.Add(this.txtTennv);
             this.groupBox1.Controls.Add(this.label24);
             this.groupBox1.Controls.Add(this.label23);
@@ -184,6 +186,15 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
+            // 
+            // lblthongbaonv
+            // 
+            this.lblthongbaonv.AutoSize = true;
+            this.lblthongbaonv.Location = new System.Drawing.Point(249, 24);
+            this.lblthongbaonv.Name = "lblthongbaonv";
+            this.lblthongbaonv.Size = new System.Drawing.Size(16, 13);
+            this.lblthongbaonv.TabIndex = 20;
+            this.lblthongbaonv.Text = "...";
             // 
             // groupBox2
             // 
@@ -206,6 +217,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnLuuNV.TabIndex = 3;
             this.btnLuuNV.Text = "Lưu";
             this.btnLuuNV.UseVisualStyleBackColor = true;
+            this.btnLuuNV.Click += new System.EventHandler(this.btnLuuNV_Click);
             // 
             // btnSuaNV
             // 
@@ -215,6 +227,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnSuaNV.TabIndex = 2;
             this.btnSuaNV.Text = "Sữa";
             this.btnSuaNV.UseVisualStyleBackColor = true;
+            this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
             // 
             // bntXoaNV
             // 
@@ -224,6 +237,7 @@ namespace CSDL.HeThongGiaoDien
             this.bntXoaNV.TabIndex = 1;
             this.bntXoaNV.Text = "Xóa";
             this.bntXoaNV.UseVisualStyleBackColor = true;
+            this.bntXoaNV.Click += new System.EventHandler(this.bntXoaNV_Click);
             // 
             // btnThemNV
             // 
@@ -233,6 +247,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnThemNV.TabIndex = 0;
             this.btnThemNV.Text = "Thêm";
             this.btnThemNV.UseVisualStyleBackColor = true;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // dgvNhanVien
             // 
@@ -285,7 +300,7 @@ namespace CSDL.HeThongGiaoDien
         #endregion
 
         private System.Windows.Forms.ComboBox cboGioitinhnv;
-        private System.Windows.Forms.DateTimePicker dtpNgaysinhnv;
+        private System.Windows.Forms.DateTimePicker dtNgaySinh;
         private System.Windows.Forms.TextBox txtDienthoainv;
         private System.Windows.Forms.TextBox txtDiachinv;
         private System.Windows.Forms.TextBox txtTennv;
@@ -306,5 +321,6 @@ namespace CSDL.HeThongGiaoDien
         private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox btnTimNV;
+        private System.Windows.Forms.Label lblthongbaonv;
     }
 }

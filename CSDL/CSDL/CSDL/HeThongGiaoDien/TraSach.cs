@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CSDL
 {
     public partial class TraSach : Form
     {
+        SqlConnection cnn;
         public TraSach()
         {
             InitializeComponent();
+            cnn = new SqlConnection("Data Source=MyLaptop;Initial Catalog=QuanLyNhaSach;Integrated Security=True");
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
