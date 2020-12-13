@@ -25,16 +25,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataAccess.dll": {}
-        }
       }
     }
   },
@@ -182,16 +172,10 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../DataAccess/DataAccess.csproj",
-      "msbuildProject": "../DataAccess/DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "DataAccess >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -221,11 +205,7 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {
-            "C:\\Users\\Admin\\OneDrive\\Desktop\\DataBase2\\CSDL\\CSDL\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\DataBase2\\CSDL\\CSDL\\DataAccess\\DataAccess.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

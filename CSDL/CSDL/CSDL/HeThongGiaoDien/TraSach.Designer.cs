@@ -30,6 +30,8 @@ namespace CSDL
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.NmUDTienCoc = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.NmUDThanhToan = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,17 +52,29 @@ namespace CSDL
             this.btnTraSach = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtMaSach = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NmUDTienCoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NmUDThanhToan)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachDaMuon)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuonTra)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label28);
+            this.groupBox1.Controls.Add(this.txtMaSach);
+            this.groupBox1.Controls.Add(this.NmUDTienCoc);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnThanhToan);
             this.groupBox1.Controls.Add(this.NmUDThanhToan);
             this.groupBox1.Controls.Add(this.label7);
@@ -77,10 +91,28 @@ namespace CSDL
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Mượn";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // NmUDTienCoc
+            // 
+            this.NmUDTienCoc.Location = new System.Drawing.Point(103, 129);
+            this.NmUDTienCoc.Name = "NmUDTienCoc";
+            this.NmUDTienCoc.Size = new System.Drawing.Size(157, 20);
+            this.NmUDTienCoc.TabIndex = 48;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(27, 136);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Đơn Giá Phạt";
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(168, 209);
+            this.btnThanhToan.Location = new System.Drawing.Point(166, 223);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(90, 29);
             this.btnThanhToan.TabIndex = 46;
@@ -90,7 +122,7 @@ namespace CSDL
             // NmUDThanhToan
             // 
             this.NmUDThanhToan.Hexadecimal = true;
-            this.NmUDThanhToan.Location = new System.Drawing.Point(143, 164);
+            this.NmUDThanhToan.Location = new System.Drawing.Point(139, 191);
             this.NmUDThanhToan.Name = "NmUDThanhToan";
             this.NmUDThanhToan.ReadOnly = true;
             this.NmUDThanhToan.Size = new System.Drawing.Size(115, 20);
@@ -102,7 +134,7 @@ namespace CSDL
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(25, 166);
+            this.label7.Location = new System.Drawing.Point(21, 193);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 13);
             this.label7.TabIndex = 44;
@@ -111,7 +143,7 @@ namespace CSDL
             // dtpNgayMuon
             // 
             this.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayMuon.Location = new System.Drawing.Point(101, 111);
+            this.dtpNgayMuon.Location = new System.Drawing.Point(103, 103);
             this.dtpNgayMuon.Name = "dtpNgayMuon";
             this.dtpNgayMuon.Size = new System.Drawing.Size(155, 20);
             this.dtpNgayMuon.TabIndex = 34;
@@ -119,7 +151,7 @@ namespace CSDL
             // cbbMaPT
             // 
             this.cbbMaPT.FormattingEnabled = true;
-            this.cbbMaPT.Location = new System.Drawing.Point(101, 75);
+            this.cbbMaPT.Location = new System.Drawing.Point(103, 53);
             this.cbbMaPT.Name = "cbbMaPT";
             this.cbbMaPT.Size = new System.Drawing.Size(155, 21);
             this.cbbMaPT.TabIndex = 12;
@@ -127,14 +159,14 @@ namespace CSDL
             // cbbMaDG
             // 
             this.cbbMaDG.FormattingEnabled = true;
-            this.cbbMaDG.Location = new System.Drawing.Point(101, 34);
+            this.cbbMaDG.Location = new System.Drawing.Point(103, 26);
             this.cbbMaDG.Name = "cbbMaDG";
             this.cbbMaDG.Size = new System.Drawing.Size(155, 21);
             this.cbbMaDG.TabIndex = 11;
             // 
             // btnXem
             // 
-            this.btnXem.Location = new System.Drawing.Point(60, 209);
+            this.btnXem.Location = new System.Drawing.Point(58, 223);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(90, 29);
             this.btnXem.TabIndex = 10;
@@ -144,7 +176,7 @@ namespace CSDL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 117);
+            this.label3.Location = new System.Drawing.Point(26, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 2;
@@ -153,7 +185,7 @@ namespace CSDL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 78);
+            this.label2.Location = new System.Drawing.Point(27, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 1;
@@ -162,7 +194,7 @@ namespace CSDL
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 37);
+            this.label1.Location = new System.Drawing.Point(27, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 0;
@@ -264,6 +296,40 @@ namespace CSDL
             this.btnThem.Text = ">>";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Location = new System.Drawing.Point(29, 83);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(50, 13);
+            this.label28.TabIndex = 49;
+            this.label28.Text = "Mã Sách";
+            // 
+            // txtMaSach
+            // 
+            this.txtMaSach.Location = new System.Drawing.Point(103, 80);
+            this.txtMaSach.Name = "txtMaSach";
+            this.txtMaSach.Size = new System.Drawing.Size(155, 20);
+            this.txtMaSach.TabIndex = 50;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(103, 155);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(157, 20);
+            this.numericUpDown1.TabIndex = 52;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(27, 157);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 13);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Số Lượng";
+            // 
             // TraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,6 +343,7 @@ namespace CSDL
             this.Text = "Trả Sách";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NmUDTienCoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NmUDThanhToan)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -284,6 +351,7 @@ namespace CSDL
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSachMuonTra)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -311,5 +379,11 @@ namespace CSDL
         private System.Windows.Forms.NumericUpDown NmUDThanhToan;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.NumericUpDown NmUDTienCoc;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtMaSach;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label8;
     }
 }
