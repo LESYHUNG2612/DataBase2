@@ -87,6 +87,7 @@ namespace CSDL
             this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
             this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.hệThốngToolStripMenuItem.Text = "Hệ thống";
+            this.hệThốngToolStripMenuItem.Click += new System.EventHandler(this.hệThốngToolStripMenuItem_Click);
             // 
             // phânQuyềnToolStripMenuItem
             // 
@@ -132,7 +133,7 @@ namespace CSDL
             this.danhSáchSáchToolStripMenuItem1,
             this.quảnLýSáchToolStripMenuItem});
             this.phiếuNhậpSáchToolStripMenuItem.Name = "phiếuNhậpSáchToolStripMenuItem";
-            this.phiếuNhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phiếuNhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.phiếuNhậpSáchToolStripMenuItem.Text = "Sách";
             // 
             // phiếuNhậpSáchToolStripMenuItem1
@@ -166,7 +167,7 @@ namespace CSDL
             this.danhSáchKháchHàngToolStripMenuItem,
             this.lậpPhiếuThuTiềnToolStripMenuItem});
             this.hóaĐơnBánSáchToolStripMenuItem.Name = "hóaĐơnBánSáchToolStripMenuItem";
-            this.hóaĐơnBánSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hóaĐơnBánSáchToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.hóaĐơnBánSáchToolStripMenuItem.Text = "Khách hàng";
             // 
             // quảnLýKháchHàngToolStripMenuItem
@@ -192,7 +193,7 @@ namespace CSDL
             this.thểLoạiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýThểLoạiToolStripMenuItem});
             this.thểLoạiToolStripMenuItem.Name = "thểLoạiToolStripMenuItem";
-            this.thểLoạiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thểLoạiToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.thểLoạiToolStripMenuItem.Text = "Thể loại";
             // 
             // quảnLýThểLoạiToolStripMenuItem

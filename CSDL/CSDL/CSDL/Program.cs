@@ -17,7 +17,7 @@ namespace CSDL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TheLoaiSach());
+            Application.Run(new Sach());
         }
     }
 }

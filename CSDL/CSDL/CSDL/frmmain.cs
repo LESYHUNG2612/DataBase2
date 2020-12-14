@@ -36,5 +36,10 @@ namespace CSDL
         {
 
         }
+
+        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

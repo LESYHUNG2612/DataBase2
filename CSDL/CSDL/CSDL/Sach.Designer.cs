@@ -50,6 +50,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnTimSach = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvDanhMucSach = new System.Windows.Forms.DataGridView();
+            this.lblthongbaonv = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).BeginInit();
@@ -57,6 +58,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblthongbaonv);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtNXB);
             this.groupBox1.Controls.Add(this.label1);
@@ -203,6 +205,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnLuuSach.TabIndex = 3;
             this.btnLuuSach.Text = "Lưu";
             this.btnLuuSach.UseVisualStyleBackColor = true;
+            this.btnLuuSach.Click += new System.EventHandler(this.btnLuuSach_Click);
             // 
             // btnSuaSach
             // 
@@ -212,6 +215,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnSuaSach.TabIndex = 2;
             this.btnSuaSach.Text = "Sữa";
             this.btnSuaSach.UseVisualStyleBackColor = true;
+            this.btnSuaSach.Click += new System.EventHandler(this.btnSuaSach_Click);
             // 
             // bntXoaSach
             // 
@@ -221,6 +225,7 @@ namespace CSDL.HeThongGiaoDien
             this.bntXoaSach.TabIndex = 1;
             this.bntXoaSach.Text = "Xóa";
             this.bntXoaSach.UseVisualStyleBackColor = true;
+            this.bntXoaSach.Click += new System.EventHandler(this.bntXoaSach_Click);
             // 
             // btnThemSach
             // 
@@ -230,6 +235,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnThemSach.TabIndex = 0;
             this.btnThemSach.Text = "Thêm";
             this.btnThemSach.UseVisualStyleBackColor = true;
+            this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click);
             // 
             // btnTimSach
             // 
@@ -256,6 +262,15 @@ namespace CSDL.HeThongGiaoDien
             this.dgvDanhMucSach.Name = "dgvDanhMucSach";
             this.dgvDanhMucSach.Size = new System.Drawing.Size(705, 224);
             this.dgvDanhMucSach.TabIndex = 27;
+            // 
+            // lblthongbaonv
+            // 
+            this.lblthongbaonv.AutoSize = true;
+            this.lblthongbaonv.Location = new System.Drawing.Point(100, 121);
+            this.lblthongbaonv.Name = "lblthongbaonv";
+            this.lblthongbaonv.Size = new System.Drawing.Size(16, 13);
+            this.lblthongbaonv.TabIndex = 24;
+            this.lblthongbaonv.Text = "...";
             // 
             // Sach
             // 
@@ -302,5 +317,6 @@ namespace CSDL.HeThongGiaoDien
         private System.Windows.Forms.TextBox btnTimSach;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvDanhMucSach;
+        private System.Windows.Forms.Label lblthongbaonv;
     }
 }
