@@ -88,12 +88,6 @@
     <Compile Include="PhanQuyen.Designer.cs">
       <DependentUpon>PhanQuyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuThuTien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuThuTien.Designer.cs">
-      <DependentUpon>PhieuThuTien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Sach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,9 +137,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PhanQuyen.resx">
       <DependentUpon>PhanQuyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PhieuThuTien.resx">
-      <DependentUpon>PhieuThuTien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sach.resx">
       <DependentUpon>Sach.cs</DependentUpon>
