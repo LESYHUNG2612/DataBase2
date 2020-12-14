@@ -5,7 +5,6 @@ C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.MuonSach
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.NhanVien.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.PhieuThuTien.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.Sach.resources
-C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.TheLoaiSach.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.TraSach.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.Login.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.Properties.Resources.resources
@@ -17,3 +16,4 @@ C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongG
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\bin\Debug\CSDL.exe.config
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\bin\Debug\CSDL.exe
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\bin\Debug\CSDL.pdb
+C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.TheLoaiSach.resources

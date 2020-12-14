@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSDL.HeThongGiaoDien;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace CSDL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HeThongGiaoDien.NhanVien());
+            Application.Run(new TheLoaiSach());
         }
     }
 }

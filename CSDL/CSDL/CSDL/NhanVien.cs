@@ -67,7 +67,7 @@ namespace CSDL.HeThongGiaoDien
             txtManv.DataBindings.Add("Text", dgvNhanVien.DataSource, "MaNV");
             txtTennv.DataBindings.Add("Text", dgvNhanVien.DataSource, "TenNV");
             cboGioitinhnv.DataBindings.Add("Text", dgvNhanVien.DataSource, "Gioitinh");
-            //dtNgaySinh.DataBindings.Add("Text", dgvNhanVien.DataSource, "NgaySinh");
+            dtNgaySinh.DataBindings.Add("Text", dgvNhanVien.DataSource, "NgaySinh");
             txtDiachinv.DataBindings.Add("Text", dgvNhanVien.DataSource, "DiaChiNV");
             txtDienthoainv.DataBindings.Add("Text", dgvNhanVien.DataSource, "DienThoai");
         }
@@ -287,6 +287,5 @@ namespace CSDL.HeThongGiaoDien
             MessageBox.Show("Xoá thành công !");
             loadnvlenluoi();
         }
-
     }
 }

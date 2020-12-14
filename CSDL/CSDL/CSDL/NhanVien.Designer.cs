@@ -215,7 +215,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnLuuNV.Name = "btnLuuNV";
             this.btnLuuNV.Size = new System.Drawing.Size(91, 32);
             this.btnLuuNV.TabIndex = 3;
-            this.btnLuuNV.Text = "Lưu";
+            this.btnLuuNV.Text = "Lưu NV Mới";
             this.btnLuuNV.UseVisualStyleBackColor = true;
             this.btnLuuNV.Click += new System.EventHandler(this.btnLuuNV_Click);
             // 
@@ -245,7 +245,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnThemNV.Name = "btnThemNV";
             this.btnThemNV.Size = new System.Drawing.Size(91, 32);
             this.btnThemNV.TabIndex = 0;
-            this.btnThemNV.Text = "Thêm";
+            this.btnThemNV.Text = "Thêm Mã NV";
             this.btnThemNV.UseVisualStyleBackColor = true;
             this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
