@@ -67,6 +67,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.groupBox2.Controls.Add(this.btnLuuĐG);
             this.groupBox2.Controls.Add(this.btnSuaĐG);
             this.groupBox2.Controls.Add(this.bntXoaĐG);
@@ -120,6 +121,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.groupBox1.Controls.Add(this.lblthongbaodg);
             this.groupBox1.Controls.Add(this.txtEmailDG);
             this.groupBox1.Controls.Add(this.label1);
@@ -279,6 +281,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(797, 488);
             this.Controls.Add(this.dgvdg);
             this.Controls.Add(this.groupBox2);

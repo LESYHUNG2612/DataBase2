@@ -279,6 +279,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(732, 488);
             this.Controls.Add(this.btnTimNV);
             this.Controls.Add(this.label1);

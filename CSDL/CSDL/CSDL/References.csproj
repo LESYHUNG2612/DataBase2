@@ -46,17 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanhSachSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachSach.Designer.cs">
+      <DependentUpon>DanhSachSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocGia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DocGia.Designer.cs">
       <DependentUpon>DocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmmain.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmmain.Designer.cs">
-      <DependentUpon>frmmain.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="NhanVien.cs">
       <SubType>Form</SubType>
@@ -70,6 +76,18 @@
     <Compile Include="NhapSach.Designer.cs">
       <DependentUpon>NhapSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoiQuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoiQuy.Designer.cs">
+      <DependentUpon>NoiQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanQuyen.Designer.cs">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhieuThuTien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,12 +99,6 @@
     </Compile>
     <Compile Include="Sach.Designer.cs">
       <DependentUpon>Sach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MuonSach.cs">
       <SubType>Form</SubType>
@@ -108,11 +120,14 @@
     <Compile Include="TraSach.Designer.cs">
       <DependentUpon>TraSach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanhSachSach.resx">
+      <DependentUpon>DanhSachSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocGia.resx">
       <DependentUpon>DocGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmmain.resx">
-      <DependentUpon>frmmain.cs</DependentUpon>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MuonSach.resx">
       <DependentUpon>MuonSach.cs</DependentUpon>
@@ -122,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NhapSach.resx">
       <DependentUpon>NhapSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoiQuy.resx">
+      <DependentUpon>NoiQuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhanQuyen.resx">
+      <DependentUpon>PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuThuTien.resx">
       <DependentUpon>PhieuThuTien.cs</DependentUpon>
@@ -135,9 +156,6 @@
     <EmbeddedResource Include="TraSach.resx">
       <DependentUpon>TraSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -146,6 +164,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
@@ -163,6 +182,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

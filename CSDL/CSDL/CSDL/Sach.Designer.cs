@@ -30,6 +30,7 @@ namespace CSDL.HeThongGiaoDien
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblthongbaonv = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNXB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@ namespace CSDL.HeThongGiaoDien
             this.btnTimSach = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvDanhMucSach = new System.Windows.Forms.DataGridView();
-            this.lblthongbaonv = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).BeginInit();
@@ -77,6 +77,15 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
+            // 
+            // lblthongbaonv
+            // 
+            this.lblthongbaonv.AutoSize = true;
+            this.lblthongbaonv.Location = new System.Drawing.Point(100, 121);
+            this.lblthongbaonv.Name = "lblthongbaonv";
+            this.lblthongbaonv.Size = new System.Drawing.Size(16, 13);
+            this.lblthongbaonv.TabIndex = 24;
+            this.lblthongbaonv.Text = "...";
             // 
             // label2
             // 
@@ -263,19 +272,11 @@ namespace CSDL.HeThongGiaoDien
             this.dgvDanhMucSach.Size = new System.Drawing.Size(705, 224);
             this.dgvDanhMucSach.TabIndex = 27;
             // 
-            // lblthongbaonv
-            // 
-            this.lblthongbaonv.AutoSize = true;
-            this.lblthongbaonv.Location = new System.Drawing.Point(100, 121);
-            this.lblthongbaonv.Name = "lblthongbaonv";
-            this.lblthongbaonv.Size = new System.Drawing.Size(16, 13);
-            this.lblthongbaonv.TabIndex = 24;
-            this.lblthongbaonv.Text = "...";
-            // 
             // Sach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(732, 488);
             this.Controls.Add(this.dgvDanhMucSach);
             this.Controls.Add(this.btnTimSach);

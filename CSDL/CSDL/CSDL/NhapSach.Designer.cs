@@ -36,6 +36,8 @@ namespace CSDL.HeThongGiaoDien
             this.btnThemMaNS = new System.Windows.Forms.Button();
             this.btnLuuPN = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtGiaSach = new System.Windows.Forms.NumericUpDown();
+            this.txtSoLuong = new System.Windows.Forms.NumericUpDown();
             this.lblthongbaoPNS = new System.Windows.Forms.Label();
             this.cbbMaNV = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -47,14 +49,12 @@ namespace CSDL.HeThongGiaoDien
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvNhapSach = new System.Windows.Forms.DataGridView();
-            this.txtSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.txtGiaSach = new System.Windows.Forms.NumericUpDown();
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGiaSach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhapSach)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGiaSach)).BeginInit();
             this.SuspendLayout();
             // 
             // latieude1
@@ -152,6 +152,30 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sách nhập";
+            // 
+            // txtGiaSach
+            // 
+            this.txtGiaSach.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.txtGiaSach.Location = new System.Drawing.Point(185, 257);
+            this.txtGiaSach.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtGiaSach.Name = "txtGiaSach";
+            this.txtGiaSach.Size = new System.Drawing.Size(169, 20);
+            this.txtGiaSach.TabIndex = 23;
+            // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.Location = new System.Drawing.Point(185, 207);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(169, 20);
+            this.txtSoLuong.TabIndex = 22;
             // 
             // lblthongbaoPNS
             // 
@@ -251,34 +275,11 @@ namespace CSDL.HeThongGiaoDien
             this.dgvNhapSach.Size = new System.Drawing.Size(502, 373);
             this.dgvNhapSach.TabIndex = 23;
             // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.Location = new System.Drawing.Point(185, 207);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(169, 20);
-            this.txtSoLuong.TabIndex = 22;
-            // 
-            // txtGiaSach
-            // 
-            this.txtGiaSach.Increment = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.txtGiaSach.Location = new System.Drawing.Point(185, 257);
-            this.txtGiaSach.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.txtGiaSach.Name = "txtGiaSach";
-            this.txtGiaSach.Size = new System.Drawing.Size(169, 20);
-            this.txtGiaSach.TabIndex = 23;
-            // 
             // NhapSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(1015, 450);
             this.Controls.Add(this.latieude1);
             this.Controls.Add(this.groupBox6);
@@ -290,10 +291,10 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGiaSach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhapSach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGiaSach)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

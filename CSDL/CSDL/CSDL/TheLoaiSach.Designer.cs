@@ -31,16 +31,16 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTheLoaiSach = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblthongbaoPNS = new System.Windows.Forms.Label();
             this.txtMaTheLoai = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cboTheLoai = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.lblthongbaoPNS = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoaiSach)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -80,6 +80,15 @@
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Thể Loại Sách";
+            // 
+            // lblthongbaoPNS
+            // 
+            this.lblthongbaoPNS.AutoSize = true;
+            this.lblthongbaoPNS.Location = new System.Drawing.Point(130, 16);
+            this.lblthongbaoPNS.Name = "lblthongbaoPNS";
+            this.lblthongbaoPNS.Size = new System.Drawing.Size(16, 13);
+            this.lblthongbaoPNS.TabIndex = 22;
+            this.lblthongbaoPNS.Text = "...";
             // 
             // txtMaTheLoai
             // 
@@ -132,28 +141,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức Năng";
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(59, 88);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(133, 36);
-            this.btnLuu.TabIndex = 15;
-            this.btnLuu.Text = "Lưu Thể Loại mới";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(59, 31);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(133, 36);
-            this.btnThem.TabIndex = 16;
-            this.btnThem.Text = "Thêm Mã TL";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
             // btnXoa
             // 
             this.btnXoa.Location = new System.Drawing.Point(245, 88);
@@ -176,19 +163,33 @@
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // lblthongbaoPNS
+            // btnLuu
             // 
-            this.lblthongbaoPNS.AutoSize = true;
-            this.lblthongbaoPNS.Location = new System.Drawing.Point(130, 16);
-            this.lblthongbaoPNS.Name = "lblthongbaoPNS";
-            this.lblthongbaoPNS.Size = new System.Drawing.Size(16, 13);
-            this.lblthongbaoPNS.TabIndex = 22;
-            this.lblthongbaoPNS.Text = "...";
+            this.btnLuu.Location = new System.Drawing.Point(59, 88);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(133, 36);
+            this.btnLuu.TabIndex = 15;
+            this.btnLuu.Text = "Lưu Thể Loại mới";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(59, 31);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(133, 36);
+            this.btnThem.TabIndex = 16;
+            this.btnThem.Text = "Thêm Mã TL";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // TheLoaiSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(699, 467);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

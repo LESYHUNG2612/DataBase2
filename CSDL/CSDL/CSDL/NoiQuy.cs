@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CSDL
 {
-    public partial class Login : Form
+    public partial class NoiQuy : Form
     {
-        public Login()
+        public NoiQuy()
         {
             InitializeComponent();
-        }
-
-        private void btnDangNhap_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

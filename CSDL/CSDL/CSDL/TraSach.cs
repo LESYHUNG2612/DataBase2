@@ -44,18 +44,18 @@ namespace CSDL
         //load nhan vien len luoi
         private void loadnvlenluoi()
         {
-            dgvSachMuonTra.DataSource = docdulieu();
+            dgvSachDaTra.DataSource = docdulieu();
         }
-        //Hien Tieu De Cot Tra Sach
-        private void Hientieudecot()
+        //Hien Tieu De Cot Da Tra Sach
+        private void HientieudecotDaTra()
         {
-            dgvSachMuonTra.Columns[0].HeaderText = "Mã PT";
-            dgvSachMuonTra.Columns[1].HeaderText = "Mã ĐG";
-            dgvSachMuonTra.Columns[2].HeaderText = "Mã Sách";
-            dgvSachMuonTra.Columns[3].HeaderText = "Số Lượng";
-            dgvSachMuonTra.Columns[4].HeaderText = "Đơn giá phạt";
-            dgvSachMuonTra.Columns[5].HeaderText = "Ngày Trả";
-            dgvSachMuonTra.Columns[6].HeaderText = "Cần Thanh Toán";
+            dgvSachDaTra.Columns[0].HeaderText = "Mã PT";
+            dgvSachDaTra.Columns[1].HeaderText = "Mã ĐG";
+            dgvSachDaTra.Columns[2].HeaderText = "Mã Sách";
+            dgvSachDaTra.Columns[3].HeaderText = "Số Lượng";
+            dgvSachDaTra.Columns[4].HeaderText = "Đơn giá phạt";
+            dgvSachDaTra.Columns[5].HeaderText = "Ngày Trả";
+            dgvSachDaTra.Columns[6].HeaderText = "Cần Thanh Toán";
         }
         //Load Trả Sách
         private void TraSach_Load(object sender, EventArgs e)
@@ -63,17 +63,18 @@ namespace CSDL
             txtMaPT.Enabled = false;
             loadnvlenluoi();
             data_bingding();
-            Hientieudecot();
+            HientieudecotDaTra();
+            
         }
         #region xử lý bingding
         private void data_bingding()
         {
-            txtMaPT.DataBindings.Add("Text", dgvSachMuonTra.DataSource, "MaPT");
-            txtMaDG.DataBindings.Add("Text", dgvSachMuonTra.DataSource, "MaDG");
-            txtMaSach.DataBindings.Add("Text", dgvSachMuonTra.DataSource, "MaSach");
-            NbDonGiaPhat.DataBindings.Add("Text", dgvSachMuonTra.DataSource, "DonGiaPhat");
-            NbSoLuong.DataBindings.Add("Text", dgvSachMuonTra.DataSource, "SoLuong");
-            NbCanThanhToan.DataBindings.Add("Text", dgvSachMuonTra.DataSource, "CanThanhToan");
+            txtMaPT.DataBindings.Add("Text", dgvSachDaTra.DataSource, "MaPT");
+            txtMaDG.DataBindings.Add("Text", dgvSachDaTra.DataSource, "MaDG");
+            txtMaSach.DataBindings.Add("Text", dgvSachDaTra.DataSource, "MaSach");
+            NbDonGiaPhat.DataBindings.Add("Text", dgvSachDaTra.DataSource, "DonGiaPhat");
+            NbSoLuong.DataBindings.Add("Text", dgvSachDaTra.DataSource, "SoLuong");
+            NbCanThanhToan.DataBindings.Add("Text", dgvSachDaTra.DataSource, "CanThanhToan");
         }
         private void Huy_bingding()
         {
@@ -100,9 +101,10 @@ namespace CSDL
             PhieuThuTien f = new PhieuThuTien();
             f.ShowDialog();
         }
-        private void btnTraSach_Click(object sender, EventArgs e)
-        {
+       
+        //================================Muốn Trả=============================
+        //Hien Tieu De Cot Da Tra Sach
+        
 
-        }
     }
 }
