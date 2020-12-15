@@ -33,16 +33,11 @@ namespace CSDL
             Sach sach = new Sach();
             sach.ShowDialog();
         }
-        //Tra Sách
-        private void TraSachToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            TraSach trasach = new TraSach();
-            trasach.ShowDialog();
-        }
-        //Muon Sach
+      
+        //bán sách
         private void MuonSachToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MuonSach muonsach = new MuonSach();
+            BanSach muonsach = new BanSach();
             muonsach.ShowDialog();
         }
         //The loai Sach
@@ -51,8 +46,6 @@ namespace CSDL
             TheLoaiSach theLoaiSach = new TheLoaiSach();
             theLoaiSach.ShowDialog();
         }
-
-        
 
         //khách hàng độc giả
         private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,7 +84,6 @@ namespace CSDL
         //load from
         private void Main_Load(object sender, EventArgs e)
         {
-            txtmatkhau.PasswordChar = '*';
             A = text.Text;
             B = text1.Text;
             C = lbl1.Text;
@@ -134,7 +126,6 @@ namespace CSDL
             NoiQuy noiquy = new NoiQuy();
             noiquy.ShowDialog();
         }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             int d = 0, x;

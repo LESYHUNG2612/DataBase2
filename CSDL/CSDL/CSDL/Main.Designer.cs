@@ -40,7 +40,6 @@ namespace CSDL
             this.quảnLýKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MuonSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchSáchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TraSachToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.NhậpSáchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.phiếuNhậpSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhàSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,15 +51,6 @@ namespace CSDL
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.text = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.txtmatkhau = new System.Windows.Forms.TextBox();
-            this.btnDangnhap = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txttaikhoan = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbl5 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
@@ -78,7 +68,6 @@ namespace CSDL
             this.timer7 = new System.Windows.Forms.Timer(this.components);
             this.timer8 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,28 +138,21 @@ namespace CSDL
             // MuonSachToolStripMenuItem
             // 
             this.MuonSachToolStripMenuItem.Name = "MuonSachToolStripMenuItem";
-            this.MuonSachToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.MuonSachToolStripMenuItem.Text = "Mượn Sách";
+            this.MuonSachToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.MuonSachToolStripMenuItem.Text = "Bán Sách";
             this.MuonSachToolStripMenuItem.Click += new System.EventHandler(this.MuonSachToolStripMenuItem_Click);
             // 
             // danhSáchSáchToolStripMenuItem1
             // 
             this.danhSáchSáchToolStripMenuItem1.Name = "danhSáchSáchToolStripMenuItem1";
-            this.danhSáchSáchToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.danhSáchSáchToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.danhSáchSáchToolStripMenuItem1.Text = "Danh sách Sách";
             this.danhSáchSáchToolStripMenuItem1.Click += new System.EventHandler(this.danhSáchSáchToolStripMenuItem1_Click);
-            // 
-            // TraSachToolStripMenuItem1
-            // 
-            this.TraSachToolStripMenuItem1.Name = "TraSachToolStripMenuItem1";
-            this.TraSachToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
-            this.TraSachToolStripMenuItem1.Text = "Trả Sách";
-            this.TraSachToolStripMenuItem1.Click += new System.EventHandler(this.TraSachToolStripMenuItem1_Click);
             // 
             // NhậpSáchToolStripMenuItem1
             // 
             this.NhậpSáchToolStripMenuItem1.Name = "NhậpSáchToolStripMenuItem1";
-            this.NhậpSáchToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.NhậpSáchToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.NhậpSáchToolStripMenuItem1.Text = "Nhập Sách";
             this.NhậpSáchToolStripMenuItem1.Click += new System.EventHandler(this.phiếuNhậpSáchToolStripMenuItem1_Click);
             // 
@@ -179,7 +161,6 @@ namespace CSDL
             this.phiếuNhậpSáchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NhậpSáchToolStripMenuItem1,
             this.danhSáchSáchToolStripMenuItem1,
-            this.TraSachToolStripMenuItem1,
             this.MuonSachToolStripMenuItem});
             this.phiếuNhậpSáchToolStripMenuItem.Name = "phiếuNhậpSáchToolStripMenuItem";
             this.phiếuNhậpSáchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -216,20 +197,20 @@ namespace CSDL
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(137, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(118, 6);
             // 
             // phânQuyềnToolStripMenuItem
             // 
             this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
-            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.phânQuyềnToolStripMenuItem.Text = "Phân quyền";
+            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.phânQuyềnToolStripMenuItem.Text = "Đăng ký";
             this.phânQuyềnToolStripMenuItem.Click += new System.EventHandler(this.phânQuyềnToolStripMenuItem_Click);
             // 
             // hệThốngToolStripMenuItem
@@ -272,100 +253,6 @@ namespace CSDL
             this.text.TabIndex = 5;
             this.text.Text = "QUẢN LÝ THƯ VIỆN ";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::CSDL.Properties.Resources._1;
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.txtmatkhau);
-            this.groupBox1.Controls.Add(this.btnDangnhap);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txttaikhoan);
-            this.groupBox1.Location = new System.Drawing.Point(455, 123);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(320, 259);
-            this.groupBox1.TabIndex = 50;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Đăng nhập hệ thống";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "User",
-            "Admin"});
-            this.comboBox1.Location = new System.Drawing.Point(101, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 21);
-            this.comboBox1.TabIndex = 61;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 91);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 14);
-            this.label5.TabIndex = 60;
-            this.label5.Text = "Phân Quyền";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(19, 126);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Mật Khẩu";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(180, 152);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(96, 17);
-            this.checkBox1.TabIndex = 40;
-            this.checkBox1.Text = "Hiện password";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            // 
-            // txtmatkhau
-            // 
-            this.txtmatkhau.Location = new System.Drawing.Point(101, 123);
-            this.txtmatkhau.Name = "txtmatkhau";
-            this.txtmatkhau.Size = new System.Drawing.Size(175, 20);
-            this.txtmatkhau.TabIndex = 39;
-            // 
-            // btnDangnhap
-            // 
-            this.btnDangnhap.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangnhap.Location = new System.Drawing.Point(112, 188);
-            this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.Size = new System.Drawing.Size(96, 39);
-            this.btnDangnhap.TabIndex = 41;
-            this.btnDangnhap.Text = "Đăng nhập";
-            this.btnDangnhap.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(16, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Tài Khoản";
-            // 
-            // txttaikhoan
-            // 
-            this.txttaikhoan.Location = new System.Drawing.Point(101, 43);
-            this.txttaikhoan.Name = "txttaikhoan";
-            this.txttaikhoan.Size = new System.Drawing.Size(175, 20);
-            this.txttaikhoan.TabIndex = 36;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackgroundImage = global::CSDL.Properties.Resources._1;
@@ -378,7 +265,7 @@ namespace CSDL
             this.groupBox2.Controls.Add(this.lbl1);
             this.groupBox2.Location = new System.Drawing.Point(12, 123);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(437, 259);
+            this.groupBox2.Size = new System.Drawing.Size(757, 259);
             this.groupBox2.TabIndex = 51;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin ";
@@ -390,7 +277,7 @@ namespace CSDL
             this.lbl5.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.ForeColor = System.Drawing.Color.Red;
             this.lbl5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl5.Location = new System.Drawing.Point(217, 194);
+            this.lbl5.Location = new System.Drawing.Point(382, 198);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(179, 19);
             this.lbl5.TabIndex = 56;
@@ -404,7 +291,7 @@ namespace CSDL
             this.lbl4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4.ForeColor = System.Drawing.Color.Red;
             this.lbl4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl4.Location = new System.Drawing.Point(12, 194);
+            this.lbl4.Location = new System.Drawing.Point(177, 198);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(176, 19);
             this.lbl4.TabIndex = 55;
@@ -418,7 +305,7 @@ namespace CSDL
             this.lbl3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic);
             this.lbl3.ForeColor = System.Drawing.Color.Red;
             this.lbl3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl3.Location = new System.Drawing.Point(247, 147);
+            this.lbl3.Location = new System.Drawing.Point(412, 151);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(120, 22);
             this.lbl3.TabIndex = 54;
@@ -432,7 +319,7 @@ namespace CSDL
             this.lbl2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic);
             this.lbl2.ForeColor = System.Drawing.Color.Red;
             this.lbl2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl2.Location = new System.Drawing.Point(51, 147);
+            this.lbl2.Location = new System.Drawing.Point(216, 151);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(101, 21);
             this.lbl2.TabIndex = 52;
@@ -470,7 +357,7 @@ namespace CSDL
             this.lbl1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.Color.Red;
             this.lbl1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl1.Location = new System.Drawing.Point(119, 66);
+            this.lbl1.Location = new System.Drawing.Point(280, 64);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(191, 28);
             this.lbl1.TabIndex = 51;
@@ -515,7 +402,6 @@ namespace CSDL
             this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(800, 394);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.text);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Main";
@@ -524,8 +410,6 @@ namespace CSDL
             this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -543,7 +427,6 @@ namespace CSDL
         private System.Windows.Forms.ToolStripMenuItem quảnLýKháchHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MuonSachToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhSáchSáchToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem TraSachToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem NhậpSáchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem phiếuNhậpSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhàSáchToolStripMenuItem;
@@ -556,13 +439,6 @@ namespace CSDL
         private System.Windows.Forms.ToolStripMenuItem NhanVientoolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem danhSáchSáchToolStripMenuItem;
         private System.Windows.Forms.Label text;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox txtmatkhau;
-        private System.Windows.Forms.Button btnDangnhap;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txttaikhoan;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.Label lbl4;
@@ -571,8 +447,6 @@ namespace CSDL
         private System.Windows.Forms.Label text2;
         private System.Windows.Forms.Label text1;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;

@@ -295,5 +295,10 @@ namespace CSDL.HeThongGiaoDien
 			MessageBox.Show("Xoá thành công !");
 			loadDGlenluoi();
 		}
+
+        private void dgvdg_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

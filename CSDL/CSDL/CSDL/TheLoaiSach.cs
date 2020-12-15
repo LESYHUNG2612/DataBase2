@@ -213,6 +213,7 @@ namespace CSDL
             MessageBox.Show("Xoá thành công !");
             loadTLlenluoi();
         }
+        //load the loai sach
 
         private void TheLoaiSach_Load(object sender, EventArgs e)
         {
@@ -221,5 +222,7 @@ namespace CSDL
             data_bingding();
             Hientieudecot();
         }
+
+       
     }
 }

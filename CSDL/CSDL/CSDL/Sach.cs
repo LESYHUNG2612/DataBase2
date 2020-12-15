@@ -55,6 +55,7 @@ namespace CSDL.HeThongGiaoDien
             dgvDanhMucSach.Columns[3].HeaderText = "Tác Giả";
             dgvDanhMucSach.Columns[4].HeaderText = "Nhà Xuất Bản";        
             dgvDanhMucSach.Columns[5].HeaderText = "Tồn Kho";
+            dgvDanhMucSach.Columns[6].HeaderText = "Giá Bán";
         }
         private void Sach_Load(object sender, EventArgs e)
         {
@@ -72,6 +73,7 @@ namespace CSDL.HeThongGiaoDien
             txtTacGia.DataBindings.Add("Text", dgvDanhMucSach.DataSource, "TacGia");
             txtNXB.DataBindings.Add("Text", dgvDanhMucSach.DataSource, "NXB");         
             txtSachTon.DataBindings.Add("Text", dgvDanhMucSach.DataSource, "TonKho");
+            txtGiaBan.DataBindings.Add("Text", dgvDanhMucSach.DataSource, "GiaBan");
         }
         private void Huy_bingding()
         {
@@ -87,6 +89,8 @@ namespace CSDL.HeThongGiaoDien
                 txtNXB.DataBindings.Clear();
             if (txtSachTon.DataBindings != null)
                 txtSachTon.DataBindings.Clear();
+            if (txtGiaBan.DataBindings != null)
+                txtGiaBan.DataBindings.Clear();
         }
         #endregion
         //xu ly su kien cac nut
@@ -98,8 +102,10 @@ namespace CSDL.HeThongGiaoDien
             txtNXB.ResetText();
             txtTacGia.ResetText();
             txtSachTon.ResetText();
+            txtGiaBan.ResetText();
             txtMaSach.Text = taomaSach();
         }
+
         //dinh nghia ham xu ly luu nhan vien vao danh sach
         private void luuSach()
         {
@@ -107,7 +113,7 @@ namespace CSDL.HeThongGiaoDien
             cmd.CommandText = "sp_LUUSACH";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = cnn;
-            string MaSach, MaTL, TenSach, NXB, TacGia, TonKho;
+            string MaSach, MaTL, TenSach, NXB, TacGia, TonKho,GiaBan;
             if (cboMaTheLoai.Text == "")
             {
                 MessageBox.Show("Mã Thể Loại Không được trống!");
@@ -138,12 +144,14 @@ namespace CSDL.HeThongGiaoDien
             TacGia = txtTacGia.Text;
             NXB = txtNXB.Text;
             TonKho = txtSachTon.Text;
+            GiaBan = txtGiaBan.Text;       
             cmd.Parameters.AddWithValue("@MaSach", MaSach);
             cmd.Parameters.AddWithValue("@MaTL", MaTL);
             cmd.Parameters.AddWithValue("@TenSach", TenSach);
             cmd.Parameters.AddWithValue("@TacGia", TacGia);
             cmd.Parameters.AddWithValue("@NXB", NXB);           
             cmd.Parameters.AddWithValue("@TonKho", TonKho);
+            cmd.Parameters.AddWithValue("@GiaBan", GiaBan);
             try
             {
                 cmd.Parameters.Add("@kq",
@@ -176,7 +184,6 @@ namespace CSDL.HeThongGiaoDien
             }
         }
         //xu ly su kien click 
-
         private void btnLuuSach_Click(object sender, EventArgs e)
         {
             Huy_bingding();
@@ -184,6 +191,7 @@ namespace CSDL.HeThongGiaoDien
             loadSachlenluoi();
             data_bingding();
         }
+
         //dinh nghia ham xu ly sua Sach
         private void suaSach()
         {
@@ -191,7 +199,7 @@ namespace CSDL.HeThongGiaoDien
             cmd.CommandText = "sp_SUASACH";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = cnn;
-            string MaSach, MaTL, TenSach, NXB, TacGia, TonKho;
+            string MaSach, MaTL, TenSach, NXB, TacGia, TonKho, GiaBan;
             if (cboMaTheLoai.Text == "")
             {
                 MessageBox.Show("Mã Thể Loại Không được trống!");
@@ -222,12 +230,14 @@ namespace CSDL.HeThongGiaoDien
             TacGia = txtTacGia.Text;
             NXB = txtNXB.Text;
             TonKho = txtSachTon.Text;
+            GiaBan = txtGiaBan.Text;
             cmd.Parameters.AddWithValue("@MaSach", MaSach);
             cmd.Parameters.AddWithValue("@MaTL", MaTL);
             cmd.Parameters.AddWithValue("@TenSach", TenSach);
             cmd.Parameters.AddWithValue("@TacGia", TacGia);
             cmd.Parameters.AddWithValue("@NXB", NXB);
             cmd.Parameters.AddWithValue("@TonKho", TonKho);
+            cmd.Parameters.AddWithValue("@GiaBan", GiaBan);
             try
             {
                 cmd.Parameters.Add("@kq",
@@ -285,11 +295,27 @@ namespace CSDL.HeThongGiaoDien
                 txtTenSach.ResetText();
                 txtNXB.ResetText();
                 txtTacGia.ResetText();
+                txtGiaBan.ResetText();
                 txtSachTon.ResetText();
             }
             catch { }
             MessageBox.Show("Xoá thành công !");
             loadSachlenluoi();
+        }
+        private DataTable TimTheoTenSach(string TenSach)
+        {
+            string chuoikn = $"select * from SACH where TenSach='{TenSach}'";
+            SqlCommand cmd = new SqlCommand(chuoikn, cnn);
+            DataTable TimTheoTenSach = new DataTable();
+            cnn.Open();
+            TimTheoTenSach.Load(cmd.ExecuteReader());
+            cnn.Close();
+            return TimTheoTenSach;
+        }
+        //xu ly tim sach
+        private void btnTS_Click(object sender, EventArgs e)
+        {
+            dgvDanhMucSach.DataSource = TimTheoTenSach(txtTimSach.Text);
         }
     }
 }

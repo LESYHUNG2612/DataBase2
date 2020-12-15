@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvTheLoaiSach = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -41,43 +42,67 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoaiSach)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackgroundImage = global::CSDL.Properties.Resources._1;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox3, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(699, 467);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.dgvTheLoaiSach);
-            this.groupBox2.Location = new System.Drawing.Point(32, 166);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(3, 143);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(653, 289);
-            this.groupBox2.TabIndex = 25;
+            this.groupBox2.Size = new System.Drawing.Size(693, 321);
+            this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Mục Sách";
             // 
             // dgvTheLoaiSach
             // 
             this.dgvTheLoaiSach.AllowUserToOrderColumns = true;
+            this.dgvTheLoaiSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTheLoaiSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTheLoaiSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTheLoaiSach.Location = new System.Drawing.Point(3, 16);
             this.dgvTheLoaiSach.Name = "dgvTheLoaiSach";
-            this.dgvTheLoaiSach.Size = new System.Drawing.Size(647, 270);
+            this.dgvTheLoaiSach.Size = new System.Drawing.Size(687, 302);
             this.dgvTheLoaiSach.TabIndex = 28;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.lblthongbaoPNS);
             this.groupBox1.Controls.Add(this.txtMaTheLoai);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cboTheLoai);
             this.groupBox1.Controls.Add(this.label27);
-            this.groupBox1.Location = new System.Drawing.Point(32, 21);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(282, 139);
-            this.groupBox1.TabIndex = 24;
+            this.groupBox1.Size = new System.Drawing.Size(693, 64);
+            this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Thể Loại Sách";
             // 
@@ -92,17 +117,19 @@
             // 
             // txtMaTheLoai
             // 
-            this.txtMaTheLoai.Location = new System.Drawing.Point(77, 47);
+            this.txtMaTheLoai.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtMaTheLoai.Location = new System.Drawing.Point(133, 31);
             this.txtMaTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaTheLoai.Name = "txtMaTheLoai";
             this.txtMaTheLoai.ReadOnly = true;
-            this.txtMaTheLoai.Size = new System.Drawing.Size(69, 20);
+            this.txtMaTheLoai.Size = new System.Drawing.Size(163, 20);
             this.txtMaTheLoai.TabIndex = 14;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 47);
+            this.label2.Location = new System.Drawing.Point(45, 34);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
@@ -111,8 +138,9 @@
             // 
             // cboTheLoai
             // 
+            this.cboTheLoai.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboTheLoai.FormattingEnabled = true;
-            this.cboTheLoai.Location = new System.Drawing.Point(77, 88);
+            this.cboTheLoai.Location = new System.Drawing.Point(390, 31);
             this.cboTheLoai.Margin = new System.Windows.Forms.Padding(2);
             this.cboTheLoai.Name = "cboTheLoai";
             this.cboTheLoai.Size = new System.Drawing.Size(190, 21);
@@ -120,9 +148,10 @@
             // 
             // label27
             // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Location = new System.Drawing.Point(7, 90);
+            this.label27.Location = new System.Drawing.Point(320, 33);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(42, 13);
             this.label27.TabIndex = 10;
@@ -130,20 +159,23 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.btnXoa);
             this.groupBox3.Controls.Add(this.btnSua);
             this.groupBox3.Controls.Add(this.btnLuu);
             this.groupBox3.Controls.Add(this.btnThem);
-            this.groupBox3.Location = new System.Drawing.Point(320, 21);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Location = new System.Drawing.Point(3, 73);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(365, 139);
-            this.groupBox3.TabIndex = 26;
+            this.groupBox3.Size = new System.Drawing.Size(693, 64);
+            this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chức Năng";
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(245, 88);
+            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnXoa.Location = new System.Drawing.Point(576, 18);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(80, 36);
@@ -154,7 +186,8 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(245, 31);
+            this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSua.Location = new System.Drawing.Point(280, 16);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(80, 36);
@@ -165,7 +198,8 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(59, 88);
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLuu.Location = new System.Drawing.Point(390, 18);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(133, 36);
@@ -176,7 +210,8 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(59, 31);
+            this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThem.Location = new System.Drawing.Point(94, 16);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(133, 36);
@@ -191,12 +226,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CSDL.Properties.Resources._1;
             this.ClientSize = new System.Drawing.Size(699, 467);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "TheLoaiSach";
             this.Text = "Thể Loại Sách";
             this.Load += new System.EventHandler(this.TheLoaiSach_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTheLoaiSach)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -208,18 +242,19 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgvTheLoaiSach;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblthongbaoPNS;
         private System.Windows.Forms.TextBox txtMaTheLoai;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboTheLoai;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvTheLoaiSach;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Label lblthongbaoPNS;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThem;
     }
 }

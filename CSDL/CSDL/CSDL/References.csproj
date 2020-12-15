@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhSachSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +100,11 @@
     <Compile Include="Sach.Designer.cs">
       <DependentUpon>Sach.cs</DependentUpon>
     </Compile>
-    <Compile Include="MuonSach.cs">
+    <Compile Include="BanSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MuonSach.Designer.cs">
-      <DependentUpon>MuonSach.cs</DependentUpon>
+    <Compile Include="BanSach.Designer.cs">
+      <DependentUpon>BanSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,12 +114,9 @@
     <Compile Include="TheLoaiSach.Designer.cs">
       <DependentUpon>TheLoaiSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="TraSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TraSach.Designer.cs">
-      <DependentUpon>TraSach.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhSachSach.resx">
       <DependentUpon>DanhSachSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,8 +126,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MuonSach.resx">
-      <DependentUpon>MuonSach.cs</DependentUpon>
+    <EmbeddedResource Include="BanSach.resx">
+      <DependentUpon>BanSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
@@ -143,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TheLoaiSach.resx">
       <DependentUpon>TheLoaiSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TraSach.resx">
-      <DependentUpon>TraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

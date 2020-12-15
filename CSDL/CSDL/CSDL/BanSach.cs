@@ -11,16 +11,14 @@ using System.Data.SqlClient;
 
 namespace CSDL
 {
-    public partial class DanhSachSach : Form
+    public partial class BanSach : Form
     {
-        //DataTable dssach;
         SqlConnection cnn;
-        public DanhSachSach()
+        public BanSach()
         {
             InitializeComponent();
             cnn = new SqlConnection("Data Source=MyLaptop;Initial Catalog=QuanLyNhaSach;Integrated Security=True");
         }
-        //doc du lieu len file
         private DataTable docdulieu()
         {
             SqlCommand cmd = new SqlCommand();
@@ -39,7 +37,7 @@ namespace CSDL
         {
             dgvDanhMucSach.DataSource = docdulieu();
         }
-        //hien tieu de cot
+        //hien tieu de cot Sach
         private void Hientieudecot()
         {
             dgvDanhMucSach.Columns[0].HeaderText = "Mã Sách";
@@ -48,34 +46,10 @@ namespace CSDL
             dgvDanhMucSach.Columns[3].HeaderText = "Tác Giả";
             dgvDanhMucSach.Columns[4].HeaderText = "Nhà Xuất Bản";
             dgvDanhMucSach.Columns[5].HeaderText = "Tồn Kho";
+
         }
-        //load from
-        private void DanhSachSach_Load(object sender, EventArgs e)
-        {
-            loadSachlenluoi();
-            Hientieudecot();
-        }
-        //dinh nghia cac ham tim kiem sach
-        private DataTable TimTheoMaSach(string MaSach)
-        {
-            string chuoikn = $"select * from SACH where MaSach='{MaSach}'";
-            SqlCommand cmd = new SqlCommand(chuoikn, cnn);
-            DataTable TimTheoMaSach = new DataTable();
-            cnn.Open();
-            TimTheoMaSach.Load(cmd.ExecuteReader());
-            cnn.Close();
-            return TimTheoMaSach;
-        }
-        private DataTable TimTheoMaTheLoai(string MaTL)
-        {
-            string chuoikn = $"select * from SACH where MaTL='{MaTL}'";
-            SqlCommand cmd = new SqlCommand(chuoikn, cnn);
-            DataTable TimTheoMaTheLoai = new DataTable();
-            cnn.Open();
-            TimTheoMaTheLoai.Load(cmd.ExecuteReader());
-            cnn.Close();
-            return TimTheoMaTheLoai;
-        }
+       
+        //tim sach
         private DataTable TimTheoTenSach(string TenSach)
         {
             string chuoikn = $"select * from SACH where TenSach='{TenSach}'";
@@ -86,32 +60,61 @@ namespace CSDL
             cnn.Close();
             return TimTheoTenSach;
         }
+        //xu ly su kien tim sach
         private void btnTimSach_Click(object sender, EventArgs e)
         {
-            if (rbTimTheoMa.Checked)
-            {
-                dgvDanhMucSach.DataSource = TimTheoMaSach(txtMaTK.Text);
-                txtMaTK.ForeColor = Color.Red;
-                txtMaTK.Text = (dgvDanhMucSach.Rows.Count).ToString();
-            }
-            if (rbtnTimTheoMaTL.Checked)
-            {
-                dgvDanhMucSach.DataSource = TimTheoMaTheLoai(txtMaTK.Text);
-                txtMaTK.ForeColor = Color.Red;
-                txtMaTK.Text = (dgvDanhMucSach.Rows.Count).ToString();
-            }
-            if (rbtnTimTheoTenSach.Checked)
-            {
-                dgvDanhMucSach.DataSource = TimTheoTenSach(txtMaTK.Text);
-                txtMaTK.ForeColor = Color.Red;
-                txtMaTK.Text = (dgvDanhMucSach.Rows.Count).ToString();
-            }
+            dgvDanhMucSach.DataSource = TimTheoTenSach(txtTimTSach.Text); 
+        }
+        private DataTable docdulieuSachDaBan()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "sp_LOADSACHDABAN";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = cnn;
+            DataTable Sach = new DataTable();
+            cnn.Open();
+            Sach.Load(cmd.ExecuteReader());
+            cnn.Close();
+            return Sach;
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+        //load Sachlen luoi
+        private void loadSachlenluoiSachDaBan()
         {
+            dgvDanhMucSachDaBan.DataSource = docdulieuSachDaBan();
+        }
+    
+        //load from
+        private void MuonSach_Load(object sender, EventArgs e)
+        {
+            //hiên thi sach
             loadSachlenluoi();
             Hientieudecot();
+
+            //hiên thi sach da ban
+            loadSachlenluoiSachDaBan();
+        }
+        //dinh nghia ham tinh gia ban
+
+        private void dgvDanhMucSach_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                //Lưu lại dòng dữ liệu vừa kích chọn
+                DataGridViewRow row = this.dgvDanhMucSach.Rows[e.RowIndex];
+                //Đưa dữ liệu vào textbox
+                txtMaSach.Text = row.Cells[0].Value.ToString();
+                NmUDGiaBan.Text = row.Cells[1].Value.ToString();
+
+                //Không cho phép sửa trường STT
+                TxtMaPB.Enabled = false;
+            }
+        }
+        //=======================================//
+        //dinh nghia ham doc du lieu tu dataGridViewSach lên thông tin ban sách
+        private void btnThemHoaDonBan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

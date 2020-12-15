@@ -67,8 +67,8 @@ namespace CSDL.HeThongGiaoDien
             txtMaPN.DataBindings.Add("Text", dgvNhapSach.DataSource, "MaPN");
             cbbMaSach.DataBindings.Add("Text", dgvNhapSach.DataSource, "MaSach");
             cbbMaNV.DataBindings.Add("Text", dgvNhapSach.DataSource, "MaNV");
-            txtSoLuong.DataBindings.Add("Value", dgvNhapSach.DataSource, "SoLuong");
-            txtGiaSach.DataBindings.Add("Value", dgvNhapSach.DataSource, "GiaSach");
+            txtSoLuong.DataBindings.Add("Text", dgvNhapSach.DataSource, "SoLuong");
+            txtGiaSach.DataBindings.Add("Text", dgvNhapSach.DataSource, "GiaSach");
         }
         private void Huy_bingding()
         {
@@ -103,6 +103,18 @@ namespace CSDL.HeThongGiaoDien
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = cnn;
             string MaPN, MaSach,MaNV,SoLuong, GiaSach;
+            if (cbbMaSach.Text == "")
+            {
+                MessageBox.Show("Mã Sách không được trống!");
+                cbbMaSach.Focus();
+                return;
+            }
+            if (cbbMaNV.Text == "")
+            {
+                MessageBox.Show("Mã Sách không được trống!");
+                cbbMaNV.Focus();
+                return;
+            }
             if (txtSoLuong.Text == "")
             {
                 MessageBox.Show("Số Lượng không được trống!");

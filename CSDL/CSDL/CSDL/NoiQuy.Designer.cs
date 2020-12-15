@@ -30,32 +30,36 @@ namespace CSDL
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NoiQuy));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(945, 518);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin nội quy:";
-            // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 19);
+            this.textBox1.Location = new System.Drawing.Point(3, 16);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox1.Size = new System.Drawing.Size(933, 493);
+            this.textBox1.Size = new System.Drawing.Size(960, 523);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(966, 542);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin nội quy:";
             // 
             // NoiQuy
             // 
@@ -65,7 +69,9 @@ namespace CSDL
             this.ClientSize = new System.Drawing.Size(966, 542);
             this.Controls.Add(this.groupBox1);
             this.Name = "NoiQuy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NoiQuy";
+            this.Load += new System.EventHandler(this.NoiQuy_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -74,7 +80,7 @@ namespace CSDL
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

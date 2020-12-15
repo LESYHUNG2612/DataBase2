@@ -16,5 +16,10 @@ namespace CSDL
         {
             InitializeComponent();
         }
+
+        private void NoiQuy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

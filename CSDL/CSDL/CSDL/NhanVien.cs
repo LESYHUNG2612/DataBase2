@@ -287,5 +287,26 @@ namespace CSDL.HeThongGiaoDien
             MessageBox.Show("Xoá thành công !");
             loadnvlenluoi();
         }
+        private DataTable TimTheoMaNV(string MaNV)
+        {
+            string chuoikn = $"select * from NHANVIEN where MaNV='{MaNV}'";
+            SqlCommand cmd = new SqlCommand(chuoikn, cnn);
+            DataTable TimTheoMaNV = new DataTable();
+            cnn.Open();
+            TimTheoMaNV.Load(cmd.ExecuteReader());
+            cnn.Close();
+            return TimTheoMaNV;
+        }
+        
+        private void btnTimNhanVien_Click(object sender, EventArgs e)
+        {
+            dgvNhanVien.DataSource = TimTheoMaNV(btnTimNV.Text);
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        { 
+            loadnvlenluoi();
+            Hientieudecot();
+        }
     }
 }

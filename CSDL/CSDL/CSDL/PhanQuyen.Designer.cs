@@ -40,8 +40,6 @@ namespace CSDL
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblthongbao
@@ -55,7 +53,7 @@ namespace CSDL
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(108, 189);
+            this.checkBox1.Location = new System.Drawing.Point(108, 154);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(105, 17);
             this.checkBox1.TabIndex = 53;
@@ -65,7 +63,7 @@ namespace CSDL
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(237, 213);
+            this.btnThoat.Location = new System.Drawing.Point(237, 178);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 24);
             this.btnThoat.TabIndex = 52;
@@ -75,7 +73,7 @@ namespace CSDL
             // 
             // btndangky
             // 
-            this.btndangky.Location = new System.Drawing.Point(108, 213);
+            this.btndangky.Location = new System.Drawing.Point(108, 178);
             this.btndangky.Name = "btndangky";
             this.btndangky.Size = new System.Drawing.Size(75, 24);
             this.btndangky.TabIndex = 47;
@@ -85,7 +83,7 @@ namespace CSDL
             // 
             // txtnlmk
             // 
-            this.txtnlmk.Location = new System.Drawing.Point(108, 165);
+            this.txtnlmk.Location = new System.Drawing.Point(108, 130);
             this.txtnlmk.Name = "txtnlmk";
             this.txtnlmk.PasswordChar = '*';
             this.txtnlmk.Size = new System.Drawing.Size(260, 20);
@@ -93,7 +91,7 @@ namespace CSDL
             // 
             // txtmk
             // 
-            this.txtmk.Location = new System.Drawing.Point(108, 124);
+            this.txtmk.Location = new System.Drawing.Point(108, 89);
             this.txtmk.Name = "txtmk";
             this.txtmk.PasswordChar = '*';
             this.txtmk.Size = new System.Drawing.Size(260, 20);
@@ -110,7 +108,7 @@ namespace CSDL
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 168);
+            this.label4.Location = new System.Drawing.Point(20, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 14);
             this.label4.TabIndex = 51;
@@ -120,7 +118,7 @@ namespace CSDL
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 127);
+            this.label3.Location = new System.Drawing.Point(20, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 14);
             this.label3.TabIndex = 50;
@@ -147,35 +145,12 @@ namespace CSDL
             this.label1.TabIndex = 48;
             this.label1.Text = "Tạo Tài Khoản";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 93);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 14);
-            this.label5.TabIndex = 56;
-            this.label5.Text = "Phân Quyền";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "User",
-            "Admin"});
-            this.comboBox1.Location = new System.Drawing.Point(108, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(260, 21);
-            this.comboBox1.TabIndex = 57;
-            // 
             // PhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CSDL.Properties.Resources._1;
-            this.ClientSize = new System.Drawing.Size(389, 251);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(389, 211);
             this.Controls.Add(this.lblthongbao);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btnThoat);
@@ -188,7 +163,8 @@ namespace CSDL
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PhanQuyen";
-            this.Text = "Phân Quyền";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng ký";
             this.Load += new System.EventHandler(this.PhanQuyen_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PhanQuyen_KeyDown);
             this.ResumeLayout(false);
@@ -209,7 +185,5 @@ namespace CSDL
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
