@@ -2,7 +2,6 @@ C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\References.cs
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.DocGia.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.MuonSach.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.NhanVien.resources
-C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.PhieuThuTien.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.HeThongGiaoDien.Sach.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.TraSach.resources
 C:\Users\Admin\OneDrive\Desktop\DataBase2\CSDL\CSDL\CSDL\obj\Debug\CSDL.Properties.Resources.resources

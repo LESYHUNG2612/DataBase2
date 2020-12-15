@@ -98,8 +98,7 @@ namespace CSDL
         //xu ly nut thanh toan
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            PhieuThuTien f = new PhieuThuTien();
-            f.ShowDialog();
+           
         }
        
         //================================Muốn Trả=============================

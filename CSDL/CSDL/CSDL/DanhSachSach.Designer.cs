@@ -29,69 +29,16 @@ namespace CSDL
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnTimTheoTenSach = new System.Windows.Forms.RadioButton();
-            this.btnTimMaTL = new System.Windows.Forms.RadioButton();
-            this.btnTimMaSach = new System.Windows.Forms.RadioButton();
-            this.btnTimSach = new System.Windows.Forms.Button();
             this.dgvDanhMucSach = new System.Windows.Forms.DataGridView();
-            this.groupBox2.SuspendLayout();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chsachkbd = new System.Windows.Forms.CheckBox();
+            this.chTimMaTL = new System.Windows.Forms.CheckBox();
+            this.chMaSach = new System.Windows.Forms.CheckBox();
+            this.txtMaTK = new System.Windows.Forms.TextBox();
+            this.btnTimSach = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnTimTheoTenSach);
-            this.groupBox2.Controls.Add(this.btnTimMaTL);
-            this.groupBox2.Controls.Add(this.btnTimMaSach);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 59);
-            this.groupBox2.TabIndex = 23;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chức Năng";
-            // 
-            // btnTimTheoTenSach
-            // 
-            this.btnTimTheoTenSach.AutoSize = true;
-            this.btnTimTheoTenSach.Location = new System.Drawing.Point(524, 21);
-            this.btnTimTheoTenSach.Name = "btnTimTheoTenSach";
-            this.btnTimTheoTenSach.Size = new System.Drawing.Size(120, 17);
-            this.btnTimTheoTenSach.TabIndex = 2;
-            this.btnTimTheoTenSach.TabStop = true;
-            this.btnTimTheoTenSach.Text = "Tìm Theo Tên Sách";
-            this.btnTimTheoTenSach.UseVisualStyleBackColor = true;
-            // 
-            // btnTimMaTL
-            // 
-            this.btnTimMaTL.AutoSize = true;
-            this.btnTimMaTL.Location = new System.Drawing.Point(346, 21);
-            this.btnTimMaTL.Name = "btnTimMaTL";
-            this.btnTimMaTL.Size = new System.Drawing.Size(104, 17);
-            this.btnTimMaTL.TabIndex = 1;
-            this.btnTimMaTL.TabStop = true;
-            this.btnTimMaTL.Text = "Tìm Theo Mã TL";
-            this.btnTimMaTL.UseVisualStyleBackColor = true;
-            // 
-            // btnTimMaSach
-            // 
-            this.btnTimMaSach.AutoSize = true;
-            this.btnTimMaSach.Location = new System.Drawing.Point(145, 19);
-            this.btnTimMaSach.Name = "btnTimMaSach";
-            this.btnTimMaSach.Size = new System.Drawing.Size(116, 17);
-            this.btnTimMaSach.TabIndex = 0;
-            this.btnTimMaSach.TabStop = true;
-            this.btnTimMaSach.Text = "Tìm Theo Mã Sách";
-            this.btnTimMaSach.UseVisualStyleBackColor = true;
-            // 
-            // btnTimSach
-            // 
-            this.btnTimSach.Location = new System.Drawing.Point(330, 77);
-            this.btnTimSach.Name = "btnTimSach";
-            this.btnTimSach.Size = new System.Drawing.Size(91, 32);
-            this.btnTimSach.TabIndex = 0;
-            this.btnTimSach.Text = "Tìm Sách";
-            this.btnTimSach.UseVisualStyleBackColor = true;
             // 
             // dgvDanhMucSach
             // 
@@ -100,7 +47,73 @@ namespace CSDL
             this.dgvDanhMucSach.Location = new System.Drawing.Point(13, 115);
             this.dgvDanhMucSach.Name = "dgvDanhMucSach";
             this.dgvDanhMucSach.Size = new System.Drawing.Size(775, 323);
-            this.dgvDanhMucSach.TabIndex = 28;
+            this.dgvDanhMucSach.TabIndex = 31;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.chsachkbd);
+            this.groupBox2.Controls.Add(this.chTimMaTL);
+            this.groupBox2.Controls.Add(this.chMaSach);
+            this.groupBox2.Controls.Add(this.txtMaTK);
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(776, 59);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Chức Năng";
+            // 
+            // chsachkbd
+            // 
+            this.chsachkbd.AutoSize = true;
+            this.chsachkbd.BackColor = System.Drawing.Color.Transparent;
+            this.chsachkbd.ForeColor = System.Drawing.Color.Black;
+            this.chsachkbd.Location = new System.Drawing.Point(599, 21);
+            this.chsachkbd.Name = "chsachkbd";
+            this.chsachkbd.Size = new System.Drawing.Size(155, 17);
+            this.chsachkbd.TabIndex = 33;
+            this.chsachkbd.Text = "Số sách không được mượn";
+            this.chsachkbd.UseVisualStyleBackColor = false;
+            // 
+            // chTimMaTL
+            // 
+            this.chTimMaTL.AutoSize = true;
+            this.chTimMaTL.BackColor = System.Drawing.Color.Transparent;
+            this.chTimMaTL.ForeColor = System.Drawing.Color.Black;
+            this.chTimMaTL.Location = new System.Drawing.Point(400, 20);
+            this.chTimMaTL.Name = "chTimMaTL";
+            this.chTimMaTL.Size = new System.Drawing.Size(134, 17);
+            this.chTimMaTL.TabIndex = 34;
+            this.chTimMaTL.Text = "Tìm Theo Mã Thể Loại";
+            this.chTimMaTL.UseVisualStyleBackColor = false;
+            // 
+            // chMaSach
+            // 
+            this.chMaSach.AutoSize = true;
+            this.chMaSach.BackColor = System.Drawing.Color.Transparent;
+            this.chMaSach.ForeColor = System.Drawing.Color.Black;
+            this.chMaSach.Location = new System.Drawing.Point(256, 19);
+            this.chMaSach.Name = "chMaSach";
+            this.chMaSach.Size = new System.Drawing.Size(117, 17);
+            this.chMaSach.TabIndex = 35;
+            this.chMaSach.Text = "Tìm Theo Mã Sách";
+            this.chMaSach.UseVisualStyleBackColor = false;
+            // 
+            // txtMaTK
+            // 
+            this.txtMaTK.Location = new System.Drawing.Point(63, 18);
+            this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.Size = new System.Drawing.Size(152, 20);
+            this.txtMaTK.TabIndex = 32;
+            // 
+            // btnTimSach
+            // 
+            this.btnTimSach.Location = new System.Drawing.Point(330, 77);
+            this.btnTimSach.Name = "btnTimSach";
+            this.btnTimSach.Size = new System.Drawing.Size(91, 32);
+            this.btnTimSach.TabIndex = 29;
+            this.btnTimSach.Text = "Tìm Sách";
+            this.btnTimSach.UseVisualStyleBackColor = true;
+            this.btnTimSach.Click += new System.EventHandler(this.btnTimSach_Click);
             // 
             // DanhSachSach
             // 
@@ -113,20 +126,22 @@ namespace CSDL
             this.Controls.Add(this.btnTimSach);
             this.Name = "DanhSachSach";
             this.Text = "DanhSachSach";
+            this.Load += new System.EventHandler(this.DanhSachSach_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.DataGridView dgvDanhMucSach;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnTimSach;
-        private System.Windows.Forms.RadioButton btnTimTheoTenSach;
-        private System.Windows.Forms.RadioButton btnTimMaTL;
-        private System.Windows.Forms.RadioButton btnTimMaSach;
-        private System.Windows.Forms.DataGridView dgvDanhMucSach;
+        private System.Windows.Forms.TextBox txtMaTK;
+        private System.Windows.Forms.CheckBox chsachkbd;
+        private System.Windows.Forms.CheckBox chTimMaTL;
+        private System.Windows.Forms.CheckBox chMaSach;
     }
 }

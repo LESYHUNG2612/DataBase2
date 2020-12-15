@@ -60,13 +60,6 @@ namespace CSDL
             DocGia docgia = new DocGia();
             docgia.ShowDialog();
         }
-
-        //phieu thu tien
-        private void lậpPhiếuThuTiềnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PhieuThuTien phieuThuTien = new PhieuThuTien();
-            phieuThuTien.ShowDialog();
-        }
         //Nhan viên
         private void NhanVientoolStripMenuItem1_Click(object sender, EventArgs e)
         {
