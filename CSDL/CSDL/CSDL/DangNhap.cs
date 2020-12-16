@@ -24,8 +24,6 @@ namespace CSDL
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
             dangnhap();
-            Main main = new Main();
-            main.ShowDialog();
         }
         private void dangnhap()
         {
@@ -62,8 +60,11 @@ namespace CSDL
                     label1.Text = "Thành Công";
                     txttaikhoan.Text = "";
                     txtmatkhau.Text = "";
+                    Main main = new Main();
+                    main.ShowDialog();
                 }
             }
+            
         }
         public Object layGiaTri(string sql) //lay gia tri cua  cot dau tien trong bang 
         {

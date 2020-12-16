@@ -317,5 +317,11 @@ namespace CSDL.HeThongGiaoDien
         {
             dgvDanhMucSach.DataSource = TimTheoTenSach(txtTimSach.Text);
         }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            loadSachlenluoi();
+            Hientieudecot();
+        }
     }
 }

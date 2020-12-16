@@ -32,6 +32,8 @@ namespace CSDL.HeThongGiaoDien
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDanhMucSach = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTacGia = new System.Windows.Forms.TextBox();
             this.txtGiaBan = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.lblthongbaonv = new System.Windows.Forms.Label();
@@ -49,13 +51,12 @@ namespace CSDL.HeThongGiaoDien
             this.btnLuuSach = new System.Windows.Forms.Button();
             this.btnSuaSach = new System.Windows.Forms.Button();
             this.bntXoaSach = new System.Windows.Forms.Button();
-            this.btnThemSach = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnTS = new System.Windows.Forms.Button();
             this.txtTimSach = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTacGia = new System.Windows.Forms.TextBox();
-            this.btnTS = new System.Windows.Forms.Button();
+            this.btnThemSach = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -121,8 +122,28 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Sách";
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(373, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "Tác giả";
+            // 
+            // txtTacGia
+            // 
+            this.txtTacGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTacGia.Location = new System.Drawing.Point(464, 14);
+            this.txtTacGia.Name = "txtTacGia";
+            this.txtTacGia.Size = new System.Drawing.Size(178, 20);
+            this.txtTacGia.TabIndex = 62;
+            // 
             // txtGiaBan
             // 
+            this.txtGiaBan.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtGiaBan.Location = new System.Drawing.Point(464, 99);
             this.txtGiaBan.Maximum = new decimal(new int[] {
             100000000,
@@ -145,6 +166,7 @@ namespace CSDL.HeThongGiaoDien
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(375, 106);
@@ -309,20 +331,10 @@ namespace CSDL.HeThongGiaoDien
             this.bntXoaSach.UseVisualStyleBackColor = true;
             this.bntXoaSach.Click += new System.EventHandler(this.bntXoaSach_Click);
             // 
-            // btnThemSach
-            // 
-            this.btnThemSach.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnThemSach.Location = new System.Drawing.Point(66, 16);
-            this.btnThemSach.Name = "btnThemSach";
-            this.btnThemSach.Size = new System.Drawing.Size(91, 32);
-            this.btnThemSach.TabIndex = 0;
-            this.btnThemSach.Text = "Tạo Mã Sách";
-            this.btnThemSach.UseVisualStyleBackColor = true;
-            this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.btnLoad);
             this.groupBox3.Controls.Add(this.btnTS);
             this.groupBox3.Controls.Add(this.txtTimSach);
             this.groupBox3.Controls.Add(this.label3);
@@ -333,6 +345,36 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm sách";
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLoad.BackColor = System.Drawing.Color.Teal;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.Location = new System.Drawing.Point(511, 15);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 26);
+            this.btnLoad.TabIndex = 34;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // btnTS
+            // 
+            this.btnTS.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTS.BackColor = System.Drawing.Color.Teal;
+            this.btnTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTS.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTS.ForeColor = System.Drawing.Color.White;
+            this.btnTS.Location = new System.Drawing.Point(391, 15);
+            this.btnTS.Name = "btnTS";
+            this.btnTS.Size = new System.Drawing.Size(75, 26);
+            this.btnTS.TabIndex = 33;
+            this.btnTS.Text = "Tìm Sách";
+            this.btnTS.UseVisualStyleBackColor = false;
+            this.btnTS.Click += new System.EventHandler(this.btnTS_Click);
             // 
             // txtTimSach
             // 
@@ -351,39 +393,16 @@ namespace CSDL.HeThongGiaoDien
             this.label3.TabIndex = 27;
             this.label3.Text = "Tìm Sách :";
             // 
-            // label1
+            // btnThemSach
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(373, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 61;
-            this.label1.Text = "Tác giả";
-            // 
-            // txtTacGia
-            // 
-            this.txtTacGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTacGia.Location = new System.Drawing.Point(464, 14);
-            this.txtTacGia.Name = "txtTacGia";
-            this.txtTacGia.Size = new System.Drawing.Size(178, 20);
-            this.txtTacGia.TabIndex = 62;
-            // 
-            // btnTS
-            // 
-            this.btnTS.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTS.BackColor = System.Drawing.Color.Teal;
-            this.btnTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTS.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTS.ForeColor = System.Drawing.Color.White;
-            this.btnTS.Location = new System.Drawing.Point(391, 15);
-            this.btnTS.Name = "btnTS";
-            this.btnTS.Size = new System.Drawing.Size(75, 26);
-            this.btnTS.TabIndex = 33;
-            this.btnTS.Text = "Tìm Sách";
-            this.btnTS.UseVisualStyleBackColor = false;
-            this.btnTS.Click += new System.EventHandler(this.btnTS_Click);
+            this.btnThemSach.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThemSach.Location = new System.Drawing.Point(66, 16);
+            this.btnThemSach.Name = "btnThemSach";
+            this.btnThemSach.Size = new System.Drawing.Size(91, 32);
+            this.btnThemSach.TabIndex = 0;
+            this.btnThemSach.Text = "Tạo Mã Sách";
+            this.btnThemSach.UseVisualStyleBackColor = true;
+            this.btnThemSach.Click += new System.EventHandler(this.btnThemSach_Click);
             // 
             // Sach
             // 
@@ -427,7 +446,6 @@ namespace CSDL.HeThongGiaoDien
         private System.Windows.Forms.Button btnLuuSach;
         private System.Windows.Forms.Button btnSuaSach;
         private System.Windows.Forms.Button bntXoaSach;
-        private System.Windows.Forms.Button btnThemSach;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtTimSach;
         private System.Windows.Forms.Label label3;
@@ -436,5 +454,7 @@ namespace CSDL.HeThongGiaoDien
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTacGia;
         private System.Windows.Forms.Button btnTS;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnThemSach;
     }
 }

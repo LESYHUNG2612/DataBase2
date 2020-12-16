@@ -52,10 +52,10 @@ namespace CSDL.HeThongGiaoDien
             this.bntXoaNV = new System.Windows.Forms.Button();
             this.btnThemNV = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnTimNhanVien = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTimNV = new System.Windows.Forms.TextBox();
-            this.btnTimNhanVien = new System.Windows.Forms.Button();
-            this.btnLoad = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -91,6 +91,7 @@ namespace CSDL.HeThongGiaoDien
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNhanVien.Location = new System.Drawing.Point(3, 273);
             this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhanVien.Size = new System.Drawing.Size(726, 212);
             this.dgvNhanVien.TabIndex = 34;
             // 
@@ -273,6 +274,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnLuuNV.TabIndex = 3;
             this.btnLuuNV.Text = "Lưu NV Mới";
             this.btnLuuNV.UseVisualStyleBackColor = true;
+            this.btnLuuNV.Click += new System.EventHandler(this.btnLuuNV_Click);
             // 
             // btnSuaNV
             // 
@@ -283,6 +285,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnSuaNV.TabIndex = 2;
             this.btnSuaNV.Text = "Sữa";
             this.btnSuaNV.UseVisualStyleBackColor = true;
+            this.btnSuaNV.Click += new System.EventHandler(this.btnSuaNV_Click);
             // 
             // bntXoaNV
             // 
@@ -293,6 +296,7 @@ namespace CSDL.HeThongGiaoDien
             this.bntXoaNV.TabIndex = 1;
             this.bntXoaNV.Text = "Xóa";
             this.bntXoaNV.UseVisualStyleBackColor = true;
+            this.bntXoaNV.Click += new System.EventHandler(this.bntXoaNV_Click);
             // 
             // btnThemNV
             // 
@@ -303,6 +307,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnThemNV.TabIndex = 0;
             this.btnThemNV.Text = "Thêm Mã NV";
             this.btnThemNV.UseVisualStyleBackColor = true;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // groupBox4
             // 
@@ -320,22 +325,20 @@ namespace CSDL.HeThongGiaoDien
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Tìm Kiếm Nhân Viên";
             // 
-            // label1
+            // btnLoad
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(27, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 13);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Tìm Nhân Viên Theo Mã :";
-            // 
-            // btnTimNV
-            // 
-            this.btnTimNV.Location = new System.Drawing.Point(162, 23);
-            this.btnTimNV.Name = "btnTimNV";
-            this.btnTimNV.Size = new System.Drawing.Size(216, 20);
-            this.btnTimNV.TabIndex = 32;
+            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLoad.BackColor = System.Drawing.Color.Teal;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.Location = new System.Drawing.Point(568, 19);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(116, 26);
+            this.btnLoad.TabIndex = 35;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnTimNhanVien
             // 
@@ -352,20 +355,22 @@ namespace CSDL.HeThongGiaoDien
             this.btnTimNhanVien.UseVisualStyleBackColor = false;
             this.btnTimNhanVien.Click += new System.EventHandler(this.btnTimNhanVien_Click);
             // 
-            // btnLoad
+            // label1
             // 
-            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnLoad.BackColor = System.Drawing.Color.Teal;
-            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.ForeColor = System.Drawing.Color.White;
-            this.btnLoad.Location = new System.Drawing.Point(568, 19);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(116, 26);
-            this.btnLoad.TabIndex = 35;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = false;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(27, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 13);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Tìm Nhân Viên Theo Mã :";
+            // 
+            // btnTimNV
+            // 
+            this.btnTimNV.Location = new System.Drawing.Point(162, 23);
+            this.btnTimNV.Name = "btnTimNV";
+            this.btnTimNV.Size = new System.Drawing.Size(216, 20);
+            this.btnTimNV.TabIndex = 32;
             // 
             // NhanVien
             // 

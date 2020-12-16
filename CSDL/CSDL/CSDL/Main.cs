@@ -22,51 +22,54 @@ namespace CSDL
             cnn = new SqlConnection("Data Source=MyLaptop;Initial Catalog=QuanLyNhaSach;Integrated Security=True");
         }
         //xu ly nhap sach
-        private void phiếuNhậpSáchToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void NhậpSáchToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-             NhapSach nhapSach = new NhapSach();
+            NhapSach nhapSach = new NhapSach();
             nhapSach.ShowDialog();
         }
         //Quan Ly Sach
-        private void danhSáchSáchToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void danhSáchSáchToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             Sach sach = new Sach();
             sach.ShowDialog();
         }
-      
+
+
         //bán sách
-        private void MuonSachToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MuonSachToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             BanSach muonsach = new BanSach();
             muonsach.ShowDialog();
         }
         //The loai Sach
-        private void quảnLýThểLoạiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void quảnLýThểLoạiToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             TheLoaiSach theLoaiSach = new TheLoaiSach();
             theLoaiSach.ShowDialog();
         }
 
         //khách hàng độc giả
-        private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        private void quảnLýKháchHàngToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             DocGia docgia = new DocGia();
             docgia.ShowDialog();
         }
         //Nhan viên
-        private void NhanVientoolStripMenuItem1_Click(object sender, EventArgs e)
+        private void NhanVientoolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
             NhanVien nhanvien = new NhanVien();
             nhanvien.ShowDialog();
         }
+
         //tra cuu danh sach sach
-        private void danhSáchSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void danhSáchSáchToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             DanhSachSach danhSachSach = new DanhSachSach();
             danhSachSach.ShowDialog();
         }
+
         //Thoat chuong trinh
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             DialogResult kq;
             kq = MessageBox.Show("Bạn thật sự muốn thoát không?", "Chú Ý!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -75,8 +78,8 @@ namespace CSDL
                 this.Close();
             }
         }
-
-        private void phânQuyềnToolStripMenuItem_Click(object sender, EventArgs e)
+        //dang ky tai khoan
+        private void phânQuyềnToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             PhanQuyen phanquyen = new PhanQuyen();
             phanquyen.ShowDialog();
@@ -120,12 +123,13 @@ namespace CSDL
                 timer2.Start();
             }
         }
-
-        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        //noi quy
+        private void trợGiúpToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             NoiQuy noiquy = new NoiQuy();
             noiquy.ShowDialog();
         }
+
         private void timer2_Tick(object sender, EventArgs e)
         {
             int d = 0, x;

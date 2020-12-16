@@ -30,14 +30,14 @@ namespace CSDL
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblthongbao = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txtmatkhau = new System.Windows.Forms.TextBox();
             this.btnDangnhap = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txttaikhoan = new System.Windows.Forms.TextBox();
-            this.lblthongbao = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,22 @@ namespace CSDL
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đăng nhập hệ thống";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(56, 109);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 43;
+            // 
+            // lblthongbao
+            // 
+            this.lblthongbao.AutoSize = true;
+            this.lblthongbao.Location = new System.Drawing.Point(33, 109);
+            this.lblthongbao.Name = "lblthongbao";
+            this.lblthongbao.Size = new System.Drawing.Size(0, 13);
+            this.lblthongbao.TabIndex = 42;
             // 
             // label4
             // 
@@ -117,24 +133,6 @@ namespace CSDL
             this.txttaikhoan.Size = new System.Drawing.Size(210, 20);
             this.txttaikhoan.TabIndex = 36;
             // 
-            // lblthongbao
-            // 
-            this.lblthongbao.AutoSize = true;
-            this.lblthongbao.Location = new System.Drawing.Point(33, 109);
-            this.lblthongbao.Name = "lblthongbao";
-            this.lblthongbao.Size = new System.Drawing.Size(16, 13);
-            this.lblthongbao.TabIndex = 42;
-            this.lblthongbao.Text = "...";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 13);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "...";
-            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,6 +140,7 @@ namespace CSDL
             this.ClientSize = new System.Drawing.Size(352, 191);
             this.Controls.Add(this.groupBox1);
             this.Name = "DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";
             this.Load += new System.EventHandler(this.DangNhap_Load);
             this.groupBox1.ResumeLayout(false);

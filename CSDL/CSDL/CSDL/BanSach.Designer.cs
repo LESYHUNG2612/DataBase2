@@ -31,15 +31,18 @@ namespace CSDL
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupThongTinHoaDonBan = new System.Windows.Forms.GroupBox();
+            this.lblthongbao = new System.Windows.Forms.Label();
             this.txtMaSach = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtMaPB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtMaĐG = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnThemHoaDonBan = new System.Windows.Forms.Button();
+            this.btnTimSach = new System.Windows.Forms.Button();
             this.txtTimTSach = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,16 +51,15 @@ namespace CSDL
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvDanhMucSach = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dgvDanhMucSachDaBan = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtGiaBan = new System.Windows.Forms.TextBox();
+            this.nbSoLuong = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dptNgayTra = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnTimSach = new System.Windows.Forms.Button();
-            this.dgvDanhMucSachDaBan = new System.Windows.Forms.DataGridView();
-            this.btnThemHoaDonBan = new System.Windows.Forms.Button();
-            this.NmUDGiaBan = new System.Windows.Forms.NumericUpDown();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupThongTinHoaDonBan.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,10 +67,9 @@ namespace CSDL
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).BeginInit();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSachDaBan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NmUDGiaBan)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nbSoLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -104,9 +105,10 @@ namespace CSDL
             // groupThongTinHoaDonBan
             // 
             this.groupThongTinHoaDonBan.BackColor = System.Drawing.Color.Transparent;
+            this.groupThongTinHoaDonBan.Controls.Add(this.lblthongbao);
             this.groupThongTinHoaDonBan.Controls.Add(this.txtMaSach);
             this.groupThongTinHoaDonBan.Controls.Add(this.label9);
-            this.groupThongTinHoaDonBan.Controls.Add(this.textBox3);
+            this.groupThongTinHoaDonBan.Controls.Add(this.txtMaNV);
             this.groupThongTinHoaDonBan.Controls.Add(this.label3);
             this.groupThongTinHoaDonBan.Controls.Add(this.TxtMaPB);
             this.groupThongTinHoaDonBan.Controls.Add(this.label4);
@@ -120,6 +122,16 @@ namespace CSDL
             this.groupThongTinHoaDonBan.TabIndex = 3;
             this.groupThongTinHoaDonBan.TabStop = false;
             this.groupThongTinHoaDonBan.Text = "Thông tin Bán Sách";
+            // 
+            // lblthongbao
+            // 
+            this.lblthongbao.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblthongbao.AutoSize = true;
+            this.lblthongbao.Location = new System.Drawing.Point(188, 27);
+            this.lblthongbao.Name = "lblthongbao";
+            this.lblthongbao.Size = new System.Drawing.Size(16, 13);
+            this.lblthongbao.TabIndex = 21;
+            this.lblthongbao.Text = "...";
             // 
             // txtMaSach
             // 
@@ -138,12 +150,12 @@ namespace CSDL
             this.label9.TabIndex = 68;
             this.label9.Text = "Mã Sách";
             // 
-            // textBox3
+            // txtMaNV
             // 
-            this.textBox3.Location = new System.Drawing.Point(245, 144);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(157, 20);
-            this.textBox3.TabIndex = 67;
+            this.txtMaNV.Location = new System.Drawing.Point(245, 144);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(157, 20);
+            this.txtMaNV.TabIndex = 67;
             // 
             // label3
             // 
@@ -193,7 +205,7 @@ namespace CSDL
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnThemHoaDonBan);
+            this.groupBox1.Controls.Add(this.btnLoad);
             this.groupBox1.Controls.Add(this.btnTimSach);
             this.groupBox1.Controls.Add(this.txtTimTSach);
             this.groupBox1.Controls.Add(this.label1);
@@ -204,6 +216,36 @@ namespace CSDL
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức Năng";
+            // 
+            // btnThemHoaDonBan
+            // 
+            this.btnThemHoaDonBan.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThemHoaDonBan.BackColor = System.Drawing.Color.Teal;
+            this.btnThemHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemHoaDonBan.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemHoaDonBan.ForeColor = System.Drawing.Color.White;
+            this.btnThemHoaDonBan.Location = new System.Drawing.Point(72, 18);
+            this.btnThemHoaDonBan.Name = "btnThemHoaDonBan";
+            this.btnThemHoaDonBan.Size = new System.Drawing.Size(75, 26);
+            this.btnThemHoaDonBan.TabIndex = 33;
+            this.btnThemHoaDonBan.Text = "Bán";
+            this.btnThemHoaDonBan.UseVisualStyleBackColor = false;
+            this.btnThemHoaDonBan.Click += new System.EventHandler(this.btnThemHoaDonBan_Click);
+            // 
+            // btnTimSach
+            // 
+            this.btnTimSach.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTimSach.BackColor = System.Drawing.Color.Teal;
+            this.btnTimSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimSach.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimSach.ForeColor = System.Drawing.Color.White;
+            this.btnTimSach.Location = new System.Drawing.Point(261, 19);
+            this.btnTimSach.Name = "btnTimSach";
+            this.btnTimSach.Size = new System.Drawing.Size(75, 26);
+            this.btnTimSach.TabIndex = 32;
+            this.btnTimSach.Text = "Tìm Sách";
+            this.btnTimSach.UseVisualStyleBackColor = false;
+            this.btnTimSach.Click += new System.EventHandler(this.btnTimSach_Click);
             // 
             // txtTimTSach
             // 
@@ -225,6 +267,7 @@ namespace CSDL
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.btnThemHoaDonBan);
             this.groupBox2.Controls.Add(this.btnSuaHoaDonBan);
             this.groupBox2.Controls.Add(this.btnXoaHoaDonBan);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -242,12 +285,13 @@ namespace CSDL
             this.btnSuaHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaHoaDonBan.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaHoaDonBan.ForeColor = System.Drawing.Color.White;
-            this.btnSuaHoaDonBan.Location = new System.Drawing.Point(101, 18);
+            this.btnSuaHoaDonBan.Location = new System.Drawing.Point(186, 18);
             this.btnSuaHoaDonBan.Name = "btnSuaHoaDonBan";
             this.btnSuaHoaDonBan.Size = new System.Drawing.Size(103, 26);
             this.btnSuaHoaDonBan.TabIndex = 17;
             this.btnSuaHoaDonBan.Text = "Sửa";
             this.btnSuaHoaDonBan.UseVisualStyleBackColor = false;
+            this.btnSuaHoaDonBan.Click += new System.EventHandler(this.btnSuaHoaDonBan_Click);
             // 
             // btnXoaHoaDonBan
             // 
@@ -256,12 +300,13 @@ namespace CSDL
             this.btnXoaHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaHoaDonBan.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaHoaDonBan.ForeColor = System.Drawing.Color.White;
-            this.btnXoaHoaDonBan.Location = new System.Drawing.Point(252, 18);
+            this.btnXoaHoaDonBan.Location = new System.Drawing.Point(337, 18);
             this.btnXoaHoaDonBan.Name = "btnXoaHoaDonBan";
             this.btnXoaHoaDonBan.Size = new System.Drawing.Size(103, 26);
             this.btnXoaHoaDonBan.TabIndex = 18;
             this.btnXoaHoaDonBan.Text = "Xóa";
             this.btnXoaHoaDonBan.UseVisualStyleBackColor = false;
+            this.btnXoaHoaDonBan.Click += new System.EventHandler(this.btnXoaHoaDonBan_Click);
             // 
             // groupBox3
             // 
@@ -302,11 +347,24 @@ namespace CSDL
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh Mục Sách Đã Bán";
             // 
+            // dgvDanhMucSachDaBan
+            // 
+            this.dgvDanhMucSachDaBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDanhMucSachDaBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhMucSachDaBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDanhMucSachDaBan.Location = new System.Drawing.Point(3, 16);
+            this.dgvDanhMucSachDaBan.MultiSelect = false;
+            this.dgvDanhMucSachDaBan.Name = "dgvDanhMucSachDaBan";
+            this.dgvDanhMucSachDaBan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDanhMucSachDaBan.Size = new System.Drawing.Size(464, 233);
+            this.dgvDanhMucSachDaBan.TabIndex = 0;
+            this.dgvDanhMucSachDaBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMucSachDaBan_CellClick);
+            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.NmUDGiaBan);
-            this.groupBox5.Controls.Add(this.numericUpDown1);
+            this.groupBox5.Controls.Add(this.txtGiaBan);
+            this.groupBox5.Controls.Add(this.nbSoLuong);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.dptNgayTra);
@@ -319,18 +377,26 @@ namespace CSDL
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin Bán Sách";
             // 
-            // numericUpDown1
+            // txtGiaBan
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(240, 96);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.txtGiaBan.Location = new System.Drawing.Point(240, 133);
+            this.txtGiaBan.Name = "txtGiaBan";
+            this.txtGiaBan.ReadOnly = true;
+            this.txtGiaBan.Size = new System.Drawing.Size(100, 20);
+            this.txtGiaBan.TabIndex = 58;
+            // 
+            // nbSoLuong
+            // 
+            this.nbSoLuong.Location = new System.Drawing.Point(240, 96);
+            this.nbSoLuong.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(157, 20);
-            this.numericUpDown1.TabIndex = 57;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nbSoLuong.Name = "nbSoLuong";
+            this.nbSoLuong.Size = new System.Drawing.Size(157, 20);
+            this.nbSoLuong.TabIndex = 57;
+            this.nbSoLuong.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -358,6 +424,7 @@ namespace CSDL
             // 
             // dptNgayTra
             // 
+            this.dptNgayTra.CustomFormat = "";
             this.dptNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dptNgayTra.Location = new System.Drawing.Point(240, 52);
             this.dptNgayTra.Name = "dptNgayTra";
@@ -374,67 +441,20 @@ namespace CSDL
             this.label5.TabIndex = 50;
             this.label5.Text = "Ngày ";
             // 
-            // btnTimSach
+            // btnLoad
             // 
-            this.btnTimSach.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTimSach.BackColor = System.Drawing.Color.Teal;
-            this.btnTimSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimSach.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimSach.ForeColor = System.Drawing.Color.White;
-            this.btnTimSach.Location = new System.Drawing.Point(261, 19);
-            this.btnTimSach.Name = "btnTimSach";
-            this.btnTimSach.Size = new System.Drawing.Size(75, 26);
-            this.btnTimSach.TabIndex = 32;
-            this.btnTimSach.Text = "Tìm Sách";
-            this.btnTimSach.UseVisualStyleBackColor = false;
-            this.btnTimSach.Click += new System.EventHandler(this.btnTimSach_Click);
-            // 
-            // dgvDanhMucSachDaBan
-            // 
-            this.dgvDanhMucSachDaBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDanhMucSachDaBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhMucSachDaBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDanhMucSachDaBan.Location = new System.Drawing.Point(3, 16);
-            this.dgvDanhMucSachDaBan.Name = "dgvDanhMucSachDaBan";
-            this.dgvDanhMucSachDaBan.Size = new System.Drawing.Size(464, 233);
-            this.dgvDanhMucSachDaBan.TabIndex = 0;
-            // 
-            // btnThemHoaDonBan
-            // 
-            this.btnThemHoaDonBan.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnThemHoaDonBan.BackColor = System.Drawing.Color.Teal;
-            this.btnThemHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemHoaDonBan.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemHoaDonBan.ForeColor = System.Drawing.Color.White;
-            this.btnThemHoaDonBan.Location = new System.Drawing.Point(368, 18);
-            this.btnThemHoaDonBan.Name = "btnThemHoaDonBan";
-            this.btnThemHoaDonBan.Size = new System.Drawing.Size(75, 26);
-            this.btnThemHoaDonBan.TabIndex = 33;
-            this.btnThemHoaDonBan.Text = "Bán";
-            this.btnThemHoaDonBan.UseVisualStyleBackColor = false;
-            this.btnThemHoaDonBan.Click += new System.EventHandler(this.btnThemHoaDonBan_Click);
-            // 
-            // NmUDGiaBan
-            // 
-            this.NmUDGiaBan.Location = new System.Drawing.Point(240, 134);
-            this.NmUDGiaBan.Maximum = new decimal(new int[] {
-            100000000,
-            0,
-            0,
-            0});
-            this.NmUDGiaBan.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.NmUDGiaBan.Name = "NmUDGiaBan";
-            this.NmUDGiaBan.Size = new System.Drawing.Size(157, 20);
-            this.NmUDGiaBan.TabIndex = 58;
-            this.NmUDGiaBan.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            this.btnLoad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLoad.BackColor = System.Drawing.Color.Teal;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.ForeColor = System.Drawing.Color.White;
+            this.btnLoad.Location = new System.Drawing.Point(360, 19);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 26);
+            this.btnLoad.TabIndex = 34;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // BanSach
             // 
@@ -455,11 +475,10 @@ namespace CSDL
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSach)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSachDaBan)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucSachDaBan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NmUDGiaBan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nbSoLuong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -469,7 +488,6 @@ namespace CSDL
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupThongTinHoaDonBan;
         private System.Windows.Forms.TextBox txtTimTSach;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSuaHoaDonBan;
@@ -477,16 +495,8 @@ namespace CSDL
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dgvDanhMucSach;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox txtMaSach;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtMaPB;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtMaĐG;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nbSoLuong;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dptNgayTra;
@@ -494,6 +504,17 @@ namespace CSDL
         private System.Windows.Forms.Button btnTimSach;
         private System.Windows.Forms.DataGridView dgvDanhMucSachDaBan;
         private System.Windows.Forms.Button btnThemHoaDonBan;
-        private System.Windows.Forms.NumericUpDown NmUDGiaBan;
+        private System.Windows.Forms.TextBox txtGiaBan;
+        private System.Windows.Forms.GroupBox groupThongTinHoaDonBan;
+        private System.Windows.Forms.Label lblthongbao;
+        private System.Windows.Forms.TextBox txtMaSach;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtMaNV;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TxtMaPB;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtMaĐG;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button btnLoad;
     }
 }

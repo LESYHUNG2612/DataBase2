@@ -73,7 +73,7 @@ namespace CSDL
         }
         #endregion
         //xu ly them ma the loai
-        private void btnThem_Click(object sender, EventArgs e)
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             txtMaTheLoai.Clear();
             cboTheLoai.ResetText();
@@ -136,6 +136,7 @@ namespace CSDL
             loadTLlenluoi();
             data_bingding();
         }
+
         //Ham Sua Nhap The Loại
         private void suaTHELOAISACH()
         {
@@ -194,7 +195,7 @@ namespace CSDL
             data_bingding();
         }
         //xu ly su kien
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             cnn.Open();
             string sql = "";
@@ -223,6 +224,6 @@ namespace CSDL
             Hientieudecot();
         }
 
-       
+        
     }
 }

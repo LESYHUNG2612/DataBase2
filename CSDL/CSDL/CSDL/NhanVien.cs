@@ -88,6 +88,7 @@ namespace CSDL.HeThongGiaoDien
         }
         #endregion
         //xu ly su kien cac nut
+
         private void btnThemNV_Click(object sender, EventArgs e)
         {
             txtManv.Clear();
@@ -308,5 +309,7 @@ namespace CSDL.HeThongGiaoDien
             loadnvlenluoi();
             Hientieudecot();
         }
+
+      
     }
 }
