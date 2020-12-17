@@ -272,6 +272,7 @@ namespace CSDL.HeThongGiaoDien
             this.dgvNhapSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhapSach.Location = new System.Drawing.Point(6, 16);
             this.dgvNhapSach.Name = "dgvNhapSach";
+            this.dgvNhapSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhapSach.Size = new System.Drawing.Size(502, 373);
             this.dgvNhapSach.TabIndex = 23;
             // 

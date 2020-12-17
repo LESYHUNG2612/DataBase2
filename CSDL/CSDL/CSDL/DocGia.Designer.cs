@@ -87,6 +87,7 @@ namespace CSDL.HeThongGiaoDien
             this.dgvdg.GridColor = System.Drawing.SystemColors.Control;
             this.dgvdg.Location = new System.Drawing.Point(3, 218);
             this.dgvdg.Name = "dgvdg";
+            this.dgvdg.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvdg.Size = new System.Drawing.Size(791, 267);
             this.dgvdg.TabIndex = 33;
             this.dgvdg.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdg_CellContentClick);
@@ -291,6 +292,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnLuuĐG.TabIndex = 3;
             this.btnLuuĐG.Text = "Lưu";
             this.btnLuuĐG.UseVisualStyleBackColor = true;
+            this.btnLuuĐG.Click += new System.EventHandler(this.btnLuuĐG_Click);
             // 
             // btnSuaĐG
             // 
@@ -301,6 +303,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnSuaĐG.TabIndex = 2;
             this.btnSuaĐG.Text = "Sữa";
             this.btnSuaĐG.UseVisualStyleBackColor = true;
+            this.btnSuaĐG.Click += new System.EventHandler(this.btnSuaĐG_Click);
             // 
             // bntXoaĐG
             // 
@@ -311,6 +314,7 @@ namespace CSDL.HeThongGiaoDien
             this.bntXoaĐG.TabIndex = 1;
             this.bntXoaĐG.Text = "Xóa";
             this.bntXoaĐG.UseVisualStyleBackColor = true;
+            this.bntXoaĐG.Click += new System.EventHandler(this.bntXoaĐG_Click);
             // 
             // btnThemĐG
             // 
@@ -321,6 +325,7 @@ namespace CSDL.HeThongGiaoDien
             this.btnThemĐG.TabIndex = 0;
             this.btnThemĐG.Text = "Thêm";
             this.btnThemĐG.UseVisualStyleBackColor = true;
+            this.btnThemĐG.Click += new System.EventHandler(this.btnThemĐG_Click);
             // 
             // DocGia
             // 

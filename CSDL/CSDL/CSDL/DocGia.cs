@@ -90,9 +90,8 @@ namespace CSDL.HeThongGiaoDien
 			if (txtEmailDG.DataBindings != null)
 				txtEmailDG.DataBindings.Clear();
 		}
-
-        private void btnThemĐG_Click(object sender, EventArgs e)
-        {
+		private void btnThemĐG_Click(object sender, EventArgs e)
+		{
 			txtMaDG.Clear();
 			txtTenDG.Clear();
 			cboGioitinhDG.ResetText();
@@ -101,6 +100,7 @@ namespace CSDL.HeThongGiaoDien
 			txtEmailDG.Clear();
 			txtMaDG.Text = taomaDG();
 		}
+
 		//dinh nghia ham xu ly luu doc gia vao danh sach
 		private void LuuDocGia()
 		{
@@ -180,12 +180,14 @@ namespace CSDL.HeThongGiaoDien
 		}
 		//xu ly nut luu
 		private void btnLuuĐG_Click(object sender, EventArgs e)
-        {
+		{
 			Huy_bingding();
 			LuuDocGia();
 			loadDGlenluoi();
 			data_bingding();
 		}
+
+
 		private void SuaDG()
 		{
 			SqlCommand cmd = new SqlCommand();
@@ -262,14 +264,21 @@ namespace CSDL.HeThongGiaoDien
 					cnn.Close();
 			}
 		}
-
-        private void btnSuaĐG_Click(object sender, EventArgs e)
-        {
+		private void btnSuaĐG_Click(object sender, EventArgs e)
+		{
 			Huy_bingding();
 			SuaDG();
 			loadDGlenluoi();
 			data_bingding();
 		}
+
+
+		
+
+        private void dgvdg_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
 
         private void bntXoaĐG_Click(object sender, EventArgs e)
         {
@@ -295,10 +304,5 @@ namespace CSDL.HeThongGiaoDien
 			MessageBox.Show("Xoá thành công !");
 			loadDGlenluoi();
 		}
-
-        private void dgvdg_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
