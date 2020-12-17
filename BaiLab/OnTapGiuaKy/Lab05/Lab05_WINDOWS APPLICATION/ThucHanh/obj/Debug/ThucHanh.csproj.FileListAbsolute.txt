@@ -1,0 +1,22 @@
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\bin\Debug\ThucHanh.exe.config
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\bin\Debug\ThucHanh.exe
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\bin\Debug\ThucHanh.pdb
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.Form1.resources
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.Properties.Resources.resources
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.exe
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\ThucHanh\ThucHanh\obj\Debug\ThucHanh.pdb
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\bin\Debug\ThucHanh.exe.config
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\bin\Debug\ThucHanh.exe
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\bin\Debug\ThucHanh.pdb
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.Properties.Resources.resources
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.exe
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.pdb
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.frmSinhVien.resources
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.frmThongbao.resources
+C:\Users\Admin\Desktop\CoSoDuLieu\Lab05\Lab05_WINDOWS APPLICATION\ThucHanh\obj\Debug\ThucHanh.TimKiem.resources

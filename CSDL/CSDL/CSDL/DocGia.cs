@@ -67,7 +67,6 @@ namespace CSDL.HeThongGiaoDien
 		{
 			txtMaDG.DataBindings.Add("Text", dgvdg.DataSource, "MaDG");
 			txtTenDG.DataBindings.Add("Text", dgvdg.DataSource, "TenDG");
-			//dtpNgaysinhDG.DataBindings.Add("Text", dgvdg.DataSource, "Ngày Sinh ");
 			cboGioitinhDG.DataBindings.Add("Text", dgvdg.DataSource, "GioiTinh");
 			txtDiachiDG.DataBindings.Add("Text", dgvdg.DataSource, "DiaChiDG");
 			txtDienthoaiDG.DataBindings.Add("Text", dgvdg.DataSource, "DienThoaiDG");

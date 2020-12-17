@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\bin\Debug\Lab05_Onthi.exe.config
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\bin\Debug\Lab05_Onthi.exe
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\bin\Debug\Lab05_Onthi.pdb
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.Form1.resources
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.Properties.Resources.resources
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.exe
+C:\Users\Admin\Desktop\Project_CSDL2\OnThiGiuaKy\Lab05_Onthi\Lab05_Onthi\obj\Debug\Lab05_Onthi.pdb

@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\bin\Debug\Lab09_Entity_Framework.exe.config
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\bin\Debug\Lab09_Entity_Framework.exe
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\bin\Debug\Lab09_Entity_Framework.pdb
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.Form1.resources
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.Properties.Resources.resources
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.exe
+C:\Users\Admin\Desktop\Project_CSDL2\BaiLab\Lab09_ENTITY FRAMEWORK\Lab09_Entity_Framework\Lab09_Entity_Framework\obj\Debug\Lab09_Entity_Framework.pdb

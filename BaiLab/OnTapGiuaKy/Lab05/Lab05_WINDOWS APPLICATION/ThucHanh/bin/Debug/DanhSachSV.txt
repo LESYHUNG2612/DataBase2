@@ -1,0 +1,4 @@
+﻿1512451 	Nguyễn Xuân 	Thắng 	5/05/1998 	194627118	01 Phù Đổng Thiên Vương, P8, Đà Lạt	CTK42	0932334926 	1 	Mạng máy tính, Đồ án cơ sở		
+1512452 	Nguyễn Mậu 	Tuấn 	5/06/1998 	194627918	05 Phù Đổng Thiên Vương, P8, Đà Lạt	CTK42	0932332456 	1 	Hệ điều hành, Lập trình CSDL
+1512458 	Nguyễn Hải 	Đăng 	7/11/1998 	194627146	10 Phù Đổng Thiên Vương, P8, Đà Lạt	CTK42	0932334989 	1 	Phương pháp NCKH, Lập trình trên thiết bị di động
+1512459 	Nguyễn Xuân 	Thắng 	5/12/1998 	194627568	26 Phù Đổng Thiên Vương, P8, Đà Lạt	CTK42	0932334476 	0 	Lập trình mạng, An toàn và bảo mật hệ thống
